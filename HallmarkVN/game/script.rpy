@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define mc = Character("[player]", color="#b2315c", image="mc")
+define r = Character("[player]", color="#b2315c", image="mc")
 define c = Character("Charlie")
 define m = Character("Monica")
 
@@ -194,7 +194,28 @@ label start:
 
     "{i}Until today...{/i}"
 
+    scene showing_monica_around
 
+    show mc open b at left
+    show m_neutral with dissolve
+
+    "You spend the day showing Monica around town. You’re on a tight schedule because your plane back to the city is that afternoon, but you manage to hit the biggest attractions:"
+    "The giant Christmas tree in town square,"
+    "the life-sized gingerbread house that gets fresh-baked every year, and..."
+
+    show mc sad b at left
+
+    "most depressingly, the lake you used to go ice skating on that now doesn’t even freeze over half the time because global warming’s impending heat death of our planet."
+
+    show m_happy
+    show mc neutral b at left
+
+    m "Holy shit, [player]. This place has everything. A snowman building contest? Sledding races? A town-wide snowball fight extravaganza? [player], you practically grew up in the {i}North Pole{/i}."
+
+    show m_happy
+    show mc surprise b at left
+
+    r "Yeah. You take one too many snowballs to the face and the joy’s kind of lost on you."
 
     # This ends the game.
 

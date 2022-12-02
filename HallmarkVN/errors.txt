@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 40: else clause expects a non-empty block.
-    else:
-         ^
+File "game/script.rpy", line 217: expected statement.
+    mc “Yeah. You take one too many snowballs to the face and the joy’s kind of lost on you.”
+            ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Dec  2 14:56:50 2022
+Fri Dec  2 15:22:53 2022
