@@ -9,9 +9,9 @@ define m = Character("Monica")
 
 #---MC SPRITE---
 
-#when we add the male sprite in later we're probably gonna have to put this under an if statement somehow
+# when we add the male sprite in later we're probably gonna have to put this under an if statement somehow
 
-#side images
+# side images
 image side mc angry = "/mc/mc angry.png"
 image side mc angry b = "/mc/mc angry b.png"
 image side mc confused = "/mc/mc confused.png"
@@ -27,7 +27,7 @@ image side mc sad b = "/mc/mc sad b.png"
 image side mc surprise = "/mc/mc surprise.png"
 image side mc surprise b = "/mc/mc surprise b.png"
 
-#mc half images
+# mc half images
 image mc angry = "/mc/mc angry full.png"
 image mc confused = "/mc/mc confused full.png"
 image mc done = "/mc/mc done full.png"
@@ -36,13 +36,13 @@ image mc open = "/mc/mc open full.png"
 image mc sad = "/mc/mc sad full.png"
 image mc surprise = "/mc/mc surprise full.png"
 
-#---COSMETIC STUFF---
+# ---COSMETIC STUFF---
 
-#changing left and right positions
+# changing left and right positions
 define right = Position(xalign=0.8)
 define left = Position(xalign=0.2)
 
-#in and out transitions for smooth sailing
+# in and out transitions for smooth sailing
 define easeoutleft = ComposeTransition(dissolve, before=easeoutleft)
 define easeinleft = ComposeTransition(dissolve, after=easeinleft)
 define easeoutright = ComposeTransition(dissolve, before=easeoutright)
@@ -50,7 +50,7 @@ define easeinright = ComposeTransition(dissolve, after=easeinright)
 define easeoutbottom = ComposeTransition(dissolve, before=easeoutbottom)
 define easeinbottom = ComposeTransition(dissolve, after=easeinbottom)
 
-#changing speed of dissolve transitions
+# changing speed of dissolve transitions
 define dissolve = Dissolve(.3)
 define quickdissolve= Dissolve(.2)
 
@@ -64,7 +64,7 @@ label start:
     $ proReflexive = "themselves"
     $ toBe = "are"
 
-#side image code shit
+# side image code shit
 
     init python:
         config.side_image_tag = "mc"
@@ -91,10 +91,10 @@ label start:
 
     define config.side_image_change_transform = change_transform
 
-    #flash transition if we need it ig
+    # flash transition if we need it ig
     $ flash = Fade(.25, 0, .35, color="#fff")
 
-#---START---
+# ---START---
 
     "Choose your pronouns!"
 
@@ -133,8 +133,7 @@ label start:
         $ player = player.title()
         if player == "":
             $ player = "Rowan"
-
-
+    
 
     "You, [player], are a junior reporter for Buzzread - the internet’s most popular news outlet specializing in 60-second viral news videos and hard hitting, investigative listicle journalism."
 
@@ -143,6 +142,8 @@ label start:
     show mc sad
 
     "To make up for the dumpster fire that was your last listicle, your boss assigned you to work with Monica, a senior journalist at Buzzread."
+
+    hide mc sad
 
     show m neutral with dissolve
 
