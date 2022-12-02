@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define u = Character("[player]", color="#b2315c", image="mc")
+define mc = Character("[player]", color="#b2315c", image="mc")
 define c = Character("Charlie")
 define m = Character("Monica")
 
@@ -11,7 +11,8 @@ define m = Character("Monica")
 
 # when we add the male sprite in later we're probably gonna have to put this under an if statement somehow
 
-if appearance is 'fem' or appearance == 'fem':
+# if chosen appearance is feminine
+if appearance is "fem" or appearance == "fem":
     # side images
     image side mc angry = "/mc/mc angry.png"
     image side mc angry b = "/mc/mc angry b.png"
@@ -37,9 +38,11 @@ if appearance is 'fem' or appearance == 'fem':
     image mc sad = "/mc/mc sad full.png"
     image mc surprise = "/mc/mc surprise full.png"
 
-elif appearance is 'masc' or appearance == 'masc':
+# if chose appearance is masculine
+elif appearance is "masc" or appearance == "masc":
     return
 
+# if nothing is chosen/it breaks
 else:
     return
 
@@ -65,11 +68,15 @@ define quickdissolve= Dissolve(.2)
 
 label start:
 
+    # default pronouns
     $ proSingle = "they"
     $ proAdjective = "them"
     $ proPossessive = "theirs"
     $ proReflexive = "themselves"
     $ toBe = "are"
+
+    # default appearance
+    $ appearance = "fem"
 
 # side image code shit
 
@@ -107,10 +114,10 @@ label start:
 
     menu:
         "masculine":
-            $ appearance = 'masc'
+            $ appearance = "masc"
         
         "feminine":
-            $ appearance = 'fem'
+            $ appearance = "fem"
 
     hide mc neutral
 
