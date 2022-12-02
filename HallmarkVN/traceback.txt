@@ -1,32 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 144, in script
-    mc neutral "You, [mc], are a junior reporter for Buzzread - the internet’s most popular news outlet specializing in 60-second viral news videos and hard hitting, investigative listicle journalism."
-  File "renpy/common/00library.rpy", line 284, in say
-    who(what, interact=interact, *args, **kwargs)
-Exception: Say has image attributes ('neutral',), but there's no image tag associated with the speaking character.
+  File "game/script.rpy", line 114, in script
+    $ appearance = feminine
+  File "game/script.rpy", line 114, in <module>
+    $ appearance = feminine
+NameError: name 'feminine' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 144, in script
-    mc neutral "You, [mc], are a junior reporter for Buzzread - the internet’s most popular news outlet specializing in 60-second viral news videos and hard hitting, investigative listicle journalism."
-  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Applications/renpy-7.4.6-sdk/renpy/exports.py", line 1371, in say
-    renpy.store.say(who, what, *args, **kwargs)
-  File "renpy/common/00library.rpy", line 284, in say
-    who(what, interact=interact, *args, **kwargs)
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1193, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1017, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 943, in resolve_say_attributes
-    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
-Exception: Say has image attributes ('neutral',), but there's no image tag associated with the speaking character.
+  File "game/script.rpy", line 114, in script
+    $ appearance = feminine
+  File "C:\Users\Kristen\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Kristen\Downloads\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 114, in <module>
+    $ appearance = feminine
+NameError: name 'feminine' is not defined
 
-macOS-10.16-x86_64-i386-64bit x86_64
-Ren'Py 8.0.1.22070503n
+Windows-10-10.0.22000 AMD64
+Ren'Py 8.0.3.22090809
 HallmarkVN 1.0
-Thu Dec  1 06:09:25 2022
+Fri Dec  2 15:01:55 2022

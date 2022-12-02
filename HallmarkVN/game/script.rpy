@@ -3,38 +3,45 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define mc = Character("[player]", color="#b2315c", image="mc")
+define u = Character("[player]", color="#b2315c", image="mc")
 define c = Character("Charlie")
 define m = Character("Monica")
 
-#---MC SPRITE---
+# ---MC SPRITE---
 
 # when we add the male sprite in later we're probably gonna have to put this under an if statement somehow
 
-# side images
-image side mc angry = "/mc/mc angry.png"
-image side mc angry b = "/mc/mc angry b.png"
-image side mc confused = "/mc/mc confused.png"
-image side mc confused b = "/mc/mc confused b.png"
-image side mc done = "/mc/mc done.png"
-image side mc done b = "/mc/mc done b.png"
-image side mc neutral = "/mc/mc neutral.png"
-image side mc neutral b = "/mc/mc neutral b.png"
-image side mc open = "/mc/mc open.png"
-image side mc open b = "/mc/mc open b.png"
-image side mc sad = "/mc/mc sad.png"
-image side mc sad b = "/mc/mc sad b.png"
-image side mc surprise = "/mc/mc surprise.png"
-image side mc surprise b = "/mc/mc surprise b.png"
+if appearance is 'fem' or appearance == 'fem':
+    # side images
+    image side mc angry = "/mc/mc angry.png"
+    image side mc angry b = "/mc/mc angry b.png"
+    image side mc confused = "/mc/mc confused.png"
+    image side mc confused b = "/mc/mc confused b.png"
+    image side mc done = "/mc/mc done.png"
+    image side mc done b = "/mc/mc done b.png"
+    image side mc neutral = "/mc/mc neutral.png"
+    image side mc neutral b = "/mc/mc neutral b.png"
+    image side mc open = "/mc/mc open.png"
+    image side mc open b = "/mc/mc open b.png"
+    image side mc sad = "/mc/mc sad.png"
+    image side mc sad b = "/mc/mc sad b.png"
+    image side mc surprise = "/mc/mc surprise.png"
+    image side mc surprise b = "/mc/mc surprise b.png"
 
-# mc half images
-image mc angry = "/mc/mc angry full.png"
-image mc confused = "/mc/mc confused full.png"
-image mc done = "/mc/mc done full.png"
-image mc neutral = "/mc/mc neutral full.png"
-image mc open = "/mc/mc open full.png"
-image mc sad = "/mc/mc sad full.png"
-image mc surprise = "/mc/mc surprise full.png"
+    # mc half images
+    image mc angry = "/mc/mc angry full.png"
+    image mc confused = "/mc/mc confused full.png"
+    image mc done = "/mc/mc done full.png"
+    image mc neutral = "/mc/mc neutral full.png"
+    image mc open = "/mc/mc open full.png"
+    image mc sad = "/mc/mc sad full.png"
+    image mc surprise = "/mc/mc surprise full.png"
+
+elif appearance is 'masc' or appearance == 'masc':
+    return
+
+else:
+    return
 
 # ---COSMETIC STUFF---
 
@@ -95,6 +102,17 @@ label start:
     $ flash = Fade(.25, 0, .35, color="#fff")
 
 # ---START---
+    "Choose your appearance!"
+    show mc neutral
+
+    menu:
+        "masculine":
+            $ appearance = 'masc'
+        
+        "feminine":
+            $ appearance = 'fem'
+
+    hide mc neutral
 
     "Choose your pronouns!"
 
@@ -168,7 +186,6 @@ label start:
     "Your parents moved to Florida years ago to escape the cold winters and Seasonal Depression, and you hadn’t been back in years."
 
     "{i}Until today...{/i}"
-
 
 
 
