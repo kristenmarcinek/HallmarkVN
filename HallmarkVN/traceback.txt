@@ -1,26 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 114, in script
-    $ appearance = feminine
-  File "game/script.rpy", line 114, in <module>
-    $ appearance = feminine
-NameError: name 'feminine' is not defined
+  File "game/script.rpy", line 223, in script
+    mc surprise "Yeah. You take one too many snowballs to the face and the joy’s kind of lost on you."
+Exception: Sayer 'mc' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 114, in script
-    $ appearance = feminine
-  File "C:\Users\Kristen\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Kristen\Downloads\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 114, in <module>
-    $ appearance = feminine
-NameError: name 'feminine' is not defined
+  File "game/script.rpy", line 223, in script
+    mc surprise "Yeah. You take one too many snowballs to the face and the joy’s kind of lost on you."
+  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 881, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 774, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'mc' is not defined.
 
-Windows-10-10.0.22000 AMD64
-Ren'Py 8.0.3.22090809
+macOS-10.16-x86_64-i386-64bit x86_64
+Ren'Py 8.0.1.22070503n
 HallmarkVN 1.0
-Fri Dec  2 15:01:55 2022
+Fri Dec  2 23:57:04 2022

@@ -3,9 +3,25 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define r = Character("[player]", color="#b2315c", image="mc")
+define mc = Character("[player]", image="mc")
 define c = Character("Charlie")
 define m = Character("Monica")
+
+#---BACKGROUNDS---
+image office = "/bg/office.jpg"
+image markhall day = "/bg/markhall day.jpg"
+
+#---MONICA---
+image m angry = "/monica/m angry.png"
+image m angry b = "/monica/m angry b.png"
+image m neutral = "/monica/m neutral.png"
+image m neutral b = "/monica/m neutral b.png"
+image m sigh = "/monica/m sigh.png"
+image m sigh b = "/monica/m sigh b.png"
+image m smirk = "/monica/m smirk.png"
+image m smirk b = "/monica/m smirk b.png"
+image m surprise = "/monica/m surprise.png"
+image m surprise b = "/monica/m surprise b.png"
 
 # ---MC SPRITE---
 
@@ -96,12 +112,12 @@ label start:
     transform change_transform(old, new):
         contains:
             old
-            alpha 1.0 xalign -.01 yalign 1.0
-            linear 0.5 alpha 0.0 xalign -.01 yalign 1.0
+            alpha 1.0 xalign 0.0 yalign 1.0
+            linear 0.5 alpha 0.0 xalign 0.0 yalign 1.0
         contains:
             new
-            alpha 0.0 xalign -.01 yalign 1.0
-            linear 0.5 alpha 1.0 xalign -.01 yalign 1.0
+            alpha 0.0 xalign 0.0 yalign 1.0
+            linear 0.5 alpha 1.0 xalign 0.0 yalign 1.0
 
     define config.side_image_change_transform = change_transform
 
@@ -109,17 +125,22 @@ label start:
     $ flash = Fade(.25, 0, .35, color="#fff")
 
 # ---START---
-    "Choose your appearance!"
-    show mc neutral
 
-    menu:
-        "masculine":
-            $ appearance = "masc"
-        
-        "feminine":
-            $ appearance = "fem"
+    #note to kayla: make this an imagemap or some shit in the future
+    #note to kristen: i commented this out bc i figured for mike's demo we aren't using this feature, at least for now
 
-    hide mc neutral
+    # "Choose your appearance!"
+
+    # show mc neutral
+    #
+    # menu:
+    #     "masculine":
+    #         $ appearance = "masc"
+    #
+    #     "feminine":
+    #         $ appearance = "fem"
+    #
+    # hide mc neutral
 
     "Choose your pronouns!"
 
@@ -146,7 +167,7 @@ label start:
             $ toBe = "are"
 
     window show
-    scene bg room
+    scene office
 
 
     show mc neutral with dissolve
@@ -158,7 +179,9 @@ label start:
         $ player = player.title()
         if player == "":
             $ player = "Rowan"
-    
+        if player == "Charlie" or player == "Monica":
+            "Please choose a different name."
+            jump name
 
     "You, [player], are a junior reporter for Buzzread - the internet’s most popular news outlet specializing in 60-second viral news videos and hard hitting, investigative listicle journalism."
 
@@ -168,23 +191,23 @@ label start:
 
     "To make up for the dumpster fire that was your last listicle, your boss assigned you to work with Monica, a senior journalist at Buzzread."
 
-    hide mc sad
+    hide mc with dissolve
 
     show m neutral with dissolve
 
     "Monica’s next big project was practically guaranteed to go viral: {i}The Top 10 Small Town Getaways That Will Have You Living Your Best “Christmas Movie Protagonist” LIFE. {/i}"
 
-    show m_happy
+    show m smirk
 
     m "Bitches love Christmas movies. Don't ask me why - I can't stand 'em - but this shit's bound to go viral!"
 
-    show m_neutral
+    show m neutral
 
     "The two of you have spent the last month and a half traveling to every quaint town in New England, picking out the best bed and breakfasts."
 
     "The final stop on your little road trip just happens to be your hometown."
 
-    scene harkmall_landscape
+    scene markhall day with fade
 
     "Harkmall, Massachusetts"
 
@@ -194,28 +217,29 @@ label start:
 
     "{i}Until today...{/i}"
 
-    scene showing_monica_around
+    #scene showing_monica_around
+    #do you want this to be a CG???
 
-    show mc open b at left
-    show m_neutral with dissolve
+    show m neutral with dissolve
+
+    #if i have time i can make special cut in images for this. IF I HAVE TIME. - kayla
 
     "You spend the day showing Monica around town. You’re on a tight schedule because your plane back to the city is that afternoon, but you manage to hit the biggest attractions:"
     "The giant Christmas tree in town square,"
     "the life-sized gingerbread house that gets fresh-baked every year, and..."
 
-    show mc sad b at left
+    "Most depressingly, the lake you used to go ice skating on that now doesn’t even freeze over half the time because global warming’s impending heat death of our planet."
 
-    "most depressingly, the lake you used to go ice skating on that now doesn’t even freeze over half the time because global warming’s impending heat death of our planet."
-
-    show m_happy
-    show mc neutral b at left
+    show m smile
 
     m "Holy shit, [player]. This place has everything. A snowman building contest? Sledding races? A town-wide snowball fight extravaganza? [player], you practically grew up in the {i}North Pole{/i}."
 
-    show m_happy
-    show mc surprise b at left
+    #whenever you want the mc to show as a side image, use the speaker tag followed by the regular sprite image, in this case:
+    #mc surprise "(dialogue)"
 
-    r "Yeah. You take one too many snowballs to the face and the joy’s kind of lost on you."
+    #it's coded so that this sprite will not go away even when mc isn't speaking, but to clear it you can cheese it by using the scene function, bc that makes it disappear
+
+    mc confused "Yeah. You take one too many snowballs to the face and the joy’s kind of lost on you."
 
     # This ends the game.
 
