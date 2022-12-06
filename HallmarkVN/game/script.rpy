@@ -241,6 +241,27 @@ label start:
 
     mc confused "Yeah. You take one too many snowballs to the face and the joy’s kind of lost on you."
 
+    m "Yeah, no shit. I see why you got out of this hell hole. There isn’t even a Starcups. No wonder your last article sucked"
+
+    mc angry "It wasn’t that bad…"
+
+    scene markhall day
+
+    show m smirk
+
+    m "Yeah, it was. But don’t worry. Once we blow the lid off this sleepy, little snoozefest of a town, all the basic bitches will be crawling out of the woodwork to take their Christmas photos here and then there’ll be a Starcups on every block. And, you’ll be back on the boss’s good side!"
+
+    mc neutral "Right. Let’s just get going. Our SuperLift is downstairs."
+
+    scene markhall day
+
+    show m neutral
+
+    "The drive to the airport is a little over an hour. You and Monica get stuffed into the back of the SuperLift, during which the driver insists on blasting the latest Christmas album by Mike Bubbles."
+
+
+
+
     # This ends the game.
 
     return
