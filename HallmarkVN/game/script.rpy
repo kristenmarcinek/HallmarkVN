@@ -23,6 +23,20 @@ image m smirk b = "/monica/m smirk b.png"
 image m surprise = "/monica/m surprise.png"
 image m surprise b = "/monica/m surprise b.png"
 
+#---CHARLIE---
+image c angry = "/charlie/c angry.png"
+image c angry b = "/charlie/c angry b.png"
+image c neutral = "/charlie/c neutral.png"
+image c neutral b = "/charlie/c neutral b.png"
+image c sad = "/charlie/c sad.png"
+image c sad b = "/charlie/c sad b.png"
+image c smile = "/charlie/c smile.png"
+image c smile b = "/charlie/c smile b.png"
+image c surprise = "/charlie/c surprise.png"
+image c surprise b = "/charlie/c surprise b.png"
+image c wink = "/charlie/c wink.png"
+image c wink b = "/charlie/c wink b.png"
+
 # ---MC SPRITE---
 
 # when we add the male sprite in later we're probably gonna have to put this under an if statement somehow
@@ -93,6 +107,10 @@ label start:
 
     # default appearance
     $ appearance = "fem"
+
+    # default affection variables
+    $ monica_affection = 0
+    $ charlie_affection = 0
 
 # side image code shit
 
@@ -217,7 +235,7 @@ label start:
 
     "{i}Until today...{/i}"
 
-    #scene showing_monica_around
+    #scene showing_monica_around - kayla
     #do you want this to be a CG???
 
     show m neutral with dissolve
@@ -245,21 +263,19 @@ label start:
 
     mc angry "It wasn’t that bad…"
 
-    scene markhall day
+    scene markhall day with fade
 
-    show m smirk
+    show m smirk with dissolve
 
     m "Yeah, it was. But don’t worry. Once we blow the lid off this sleepy, little snoozefest of a town, all the basic bitches will be crawling out of the woodwork to take their Christmas photos here and then there’ll be a Starcups on every block. And, you’ll be back on the boss’s good side!"
 
     mc neutral "Right. Let’s just get going. Our SuperLift is downstairs."
 
     scene markhall day
-
     show m neutral
+    with dissolve
 
     "The drive to the airport is a little over an hour. You and Monica get stuffed into the back of the SuperLift, during which the driver insists on blasting the latest Christmas album by Mike Bubbles."
-
-
 
 
     # This ends the game.
