@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("HallmarkVN")
+define config.name = _("Holidays in Harkmall")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -62,7 +62,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "Christmas Rap.mp3"
 
 
 ## Transitions #################################################################
@@ -89,7 +89,7 @@ define config.after_load_transition = None
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = fade
 
 
 ## A variable to set the transition used when the game starts does not exist.

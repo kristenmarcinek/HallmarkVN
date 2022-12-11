@@ -144,7 +144,7 @@ label start:
 
 # ---START---
 
-    #note to kayla: make this an imagemap or some shit in the future
+    #note to kayla (aka me): make this an imagemap or some shit in the future
     #note to kristen: i commented this out bc i figured for mike's demo we aren't using this feature, at least for now
 
     # "Choose your appearance!"
@@ -201,6 +201,9 @@ label start:
             "Please choose a different name."
             jump name
 
+
+    play music "Office SFX.mp3" fadein 1 fadeout 1
+
     "You, [player], are a junior reporter for Buzzread - the internet’s most popular news outlet specializing in 60-second viral news videos and hard hitting, investigative listicle journalism."
 
     "Your last listicle, {i}10 Starcups {b}Lattes Better{/b} Than Pumpkin Spice{/i} was a total flop. It turns out people {b}really{/b} like their PSL and aren’t ready to move on."
@@ -226,6 +229,7 @@ label start:
     "The final stop on your little road trip just happens to be your hometown."
 
     scene markhall day with fade
+    play music "Almost Christmas.mp3" fadein 1 fadeout 1
 
     "Harkmall, Massachusetts"
 
@@ -243,8 +247,7 @@ label start:
     #if i have time i can make special cut in images for this. IF I HAVE TIME. - kayla
 
     "You spend the day showing Monica around town. You’re on a tight schedule because your plane back to the city is that afternoon, but you manage to hit the biggest attractions:"
-    "The giant Christmas tree in town square,"
-    "the life-sized gingerbread house that gets fresh-baked every year, and..."
+    "The giant Christmas tree in town square, the life-sized gingerbread house that gets fresh-baked every year, and..."
 
     "Most depressingly, the lake you used to go ice skating on that now doesn’t even freeze over half the time because global warming’s impending heat death of our planet."
 
@@ -259,15 +262,14 @@ label start:
 
     mc confused "Yeah. You take one too many snowballs to the face and the joy’s kind of lost on you."
 
-    m "Yeah, no shit. I see why you got out of this hell hole. There isn’t even a Starcups. No wonder your last article sucked"
+    m "Yeah, no shit. I see why you got out of this hell hole. There isn’t even a Starcups. No wonder your last article sucked."
 
     mc angry "It wasn’t that bad…"
 
-    scene markhall day with fade
+    show m smirk
 
-    show m smirk with dissolve
-
-    m "Yeah, it was. But don’t worry. Once we blow the lid off this sleepy, little snoozefest of a town, all the basic bitches will be crawling out of the woodwork to take their Christmas photos here and then there’ll be a Starcups on every block. And, you’ll be back on the boss’s good side!"
+    m "Yeah, it was. But don’t worry. Once we blow the lid off this sleepy, little snoozefest of a town, all the basic bitches will be crawling out of the woodwork to take their Christmas photos here and then there’ll be a Starcups on every block."
+    m "And, you’ll be back on the boss’s good side!"
 
     mc neutral "Right. Let’s just get going. Our SuperLift is downstairs."
 
