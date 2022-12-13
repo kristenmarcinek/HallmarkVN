@@ -25,5 +25,12 @@ label choice1_monica:
 
     "Back outside the hotel…"
 
-    
+    show m neutral with dissolve
 
+    m "Alright. [player], you grab the bags and I’ll see if we can get our room back for a couple more nights."
+
+    hide m with dissolve
+
+    "You unload the bags out of the back of the SuperLift and bring them into the lobby."
+
+    jump prologue_2
