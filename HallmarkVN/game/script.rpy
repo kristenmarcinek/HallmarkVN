@@ -94,6 +94,11 @@ define easeinbottom = ComposeTransition(dissolve, after=easeinbottom)
 define dissolve = Dissolve(.3)
 define quickdissolve= Dissolve(.2)
 
+# default affection variables
+init python:
+    monica_affection = 0
+    charlie_affection = 0
+
 # The game starts here.
 
 label start:
@@ -108,9 +113,6 @@ label start:
     # default appearance
     $ appearance = "fem"
 
-    # default affection variables
-    $ monica_affection = 0
-    $ charlie_affection = 0
 
 # side image code shit
 
@@ -278,6 +280,108 @@ label start:
     with dissolve
 
     "The drive to the airport is a little over an hour. You and Monica get stuffed into the back of the SuperLift, during which the driver insists on blasting the latest Christmas album by Mike Bubbles."
+
+    scene airport
+
+    "By the time you finally get to the airport, a light flurry has started. Monica clutches her well-tailored suit jacket a little tighter to her."
+
+    show m sigh with dissolve
+
+    m "Fuck, it’s freezing. I’ll go check our bags. Will you get me a coffee? We should still have a little money on the company card…"
+
+    hide m with dissolve
+
+    "You turn and head towards the airport’s Starcups when you hear a deep, booming voice ring out behind you."
+
+    c "[player]!? [player], is that you!?"
+
+    show c smile with dissolve
+
+    c "Holy smokes, it is you! [player]! How’ve you been?"
+
+    mc confused b "Uhhh… do I know you?"
+
+    show c surprise
+
+    c "It’s me! Charlie! Charlie Baker from school!"
+
+    "Holy crap! You used to play with a kid named Chucky when you were little. Looks like little Chucky Baker got BIG!"
+
+    mc surprise "Chuck - I mean - Cha- Charlie?! You look… different!"
+
+    show c smile
+
+    c "You haven’t aged a day! You look fantastic! How have you been?!"
+
+    mc neutral b "Oh, you know. Good. Life’s good. Work is… work. You?"
+
+    c "Oh, I hear that. My dad and I have been working overtime at the bakery now that it’s just the two of us. Say-! If you’re in town visiting you’ve totally gotta stop by. He would love to see you!"
+
+    mc surprise "Oh-! No. I’m not staying. In fact, we were actually just leaving."
+
+    show c sad
+
+    c "Leaving? Ah jeez. You mean you haven’t heard?"
+
+    mc confused "Heard what…?"
+
+    c "A major blizzard blew through New York. Every flight headed that way has been-"
+
+    scene airport
+
+    show c surprise
+
+    m "CANCELED?! WHAT DO YOU MEAN CANCELED?!"
+
+    show c surprise at left with dissolve
+    show m angry at right with dissolve
+
+    m "Unbelievable! The forecast called for clear skies! How’s a blizzard just appear out of thin air?!"
+
+    show c smile at left
+
+    c "It’s a Christmas miracle! The first white Christmas we’ve had in years! Maybe the lake will freeze thick enough to go skating."
+
+    m "[player], who’s this?"
+
+    mc open "Oh, this is Charlie. We went to school together. Charlie, this is Monica."
+
+    c "Hiya, Monica!"
+
+    show m neutral at right
+
+    m "Pleasure to meet you, Charlie"
+
+    "She doesn’t look too pleased."
+
+    show m sigh at right
+
+    m "[player], I guess we’re grounded for a couple more days. We should get a SuperLift back to the hotel."
+
+    c "Oh, don’t worry about that! I can give you both a ride back in my truck!"
+
+    m "Oh, that’s okay, we wouldn’t want to {i}impose{/i} right, [player]?" 
+
+    c "Aw, it’s no big deal! Right, [player]?"
+
+    menu:
+        "Who should you go with?"
+
+        "Call the SuperLift":
+            $ called_superlift = True
+            $ monica_affection += 5
+            $ charlie_affection -= 5
+
+        "Accept the ride from Charlie":
+            $ called_superlift = False
+            $ monica_affection -= 5
+            $ charlie_affection += 5
+
+    if called_superlift:
+        jump choice1_monica
+    else:
+        jump choice1_charlie
+
 
 
     # This ends the game.
