@@ -24,7 +24,7 @@ label choice1_charlie:
 
     "You all pile into Charlie’s pickup truck and take off back towards the hotel. You manage to make small talk with Charlie and catch up while giving Bailey the requisite amount of headpats."
 
-    scene hotel with fade
+    scene hotel outside with fade
 
     "In front of the hotel…"
 
