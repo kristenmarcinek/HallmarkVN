@@ -3,22 +3,25 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define mc = Character("[player]", image="mc")
-define c = Character("Charlie")
-define m = Character("Monica")
+define mc = Character("[player]", color="#dead71", image="mc")
+define c = Character("Charlie", color="#b55151")
+define m = Character("Monica", color="#5ba84c")
 define b = Character("Bailey")
 
 define n_nvl = Character("Nighten", kind=nvl, image="nighten", callback=Phone_SendSound)
 define e_nvl = Character("Eileen", kind=nvl, callback=Phone_ReceiveSound)
 
 #---BACKGROUNDS---
-image office = "/bg/office.jpg"
-image markhall day = "/bg/markhall day.jpg"
-image bakery = "/bg/bakery.jpg"
-image airport = "/bg/airport.jpg"
+image office = "/bg/office.png"
+image markhall day = "/bg/markhall day.png"
+image bakery = "/bg/bakery.png"
+image airport = "/bg/airport.png"
+image hotel = "/bg/hotel.png"
+image hotel outside = "/bg/hotel outside.png"
 
 #---CG---
 image monica cg 1 = "/cg/monica cg 1.png"
+image charlie cg 1 = "/cg/charlie cg 1.png"
 
 #---MONICA---
 image m angry = "/monica/m angry.png"
@@ -296,23 +299,21 @@ label start:
 
     c "[player]!? [player], is that you!?"
 
-    #START charlie cg
-    show c smile with dissolve
+    scene charlie cg 1 with fade
 
     c "Holy smokes, it is you! [player]! How’ve you been?"
 
-    mc confused b "Uhhh… do I know you?"
-
-    show c surprise
+    mc "Uhhh… do I know you?"
 
     c "It’s me! Charlie! Charlie Baker from school!"
 
     "Holy crap! You used to play with a kid named Chucky when you were little. Looks like little Chucky Baker got BIG!"
-    #END charlie cg
+
+    scene airport with fade
 
     mc surprise "Chuck - I mean - Cha- Charlie?! You look… different!"
 
-    show c smile
+    show c smile with dissolve
 
     c "You haven’t aged a day! You look fantastic! How have you been?!"
 
@@ -395,15 +396,15 @@ label start:
 
         m "Well, our old room was the last double. This room only has one bed. But, whatever. It’s fine, we’ll make it work. I’ll sleep on the floor."
 
+        scene hotel with fade
+
         "You and Monica lug your bags up to the room and sure enough, there’s only one bed."
 
-        show m sigh
+        show m sigh with dissolve
 
         m "I’m gonna shower, then we can talk dinner plans."
 
         hide m sigh with dissolve
-
-        scene hotel
 
         "You lay on your bed, doomscrolling through InstantPic, while Monica takes over the bathroom.  Mid-scroll, you get a text from Charlie. It’s a picture of an apple pie cooling on a kitchen counter."
 

@@ -21,7 +21,7 @@ label choice1_monica:
 
     "You and Monica pile into the back of the SuperLift and head back to the hotel."
 
-    scene hotel
+    scene hotel outside with fade
 
     "Back outside the hotel…"
 
@@ -36,7 +36,7 @@ label choice1_monica:
     jump prologue_2
 
 label choice2_monica:
-    scene hotel
+    scene hotel outside with dissolve
 
     "You decide to take Monica up on her offer. After all, you’re traveling together, and she is your coworker. It makes more sense to have dinner with her than it does to reconnect with some rando from grade school…"
 
