@@ -51,7 +51,24 @@ label choice1_charlie:
 
     jump prologue_2
 
-label choice2_charlie:
+label choice2_charlieA:
+    "You decide to take Charlie up on his offer. It was really good to catch up with him in the car, and he was so nice to offer to drive you and Monica all the way back from the airport. Besides… that pie looked {b}really{/b} good."
 
+    mc open "I um… actually got an invite from Charlie to have dinner at his place. You could probably come if you want? Consider it research! Finding out how the people in Harkmall live."
+
+    show m angry
+
+    m "Uh, I think I got a clear enough idea during the hour-long car ride where he wouldn’t stop talking about gingerbread. I’ll pass. You go ahead though."
+
+    jump chapter1
+
+label choice2_charlieB:
+    "You decide to take Charlie up on his offer. It could be good to catch up with an old friend from high school. Besides… that pie looks {b}really{/b} good."
+
+    mc open "I um… actually got an invite from Charlie to have dinner at his place. You could probably come if you want? Consider it research! Finding out how the people in Harkmall live."
+
+    show m angry
+
+    m "I’ll pass. You go ahead though."
 
     jump chapter1

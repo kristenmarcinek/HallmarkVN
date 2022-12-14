@@ -435,8 +435,10 @@ label start:
 
         if takeout:
             jump choice2_monica
+        elif not called_superlift and not takeout:
+            jump choice2_charlieA
         else:
-            jump choice2_charlie
+            jump choice2_charlieB
 
     label chapter1:
 
