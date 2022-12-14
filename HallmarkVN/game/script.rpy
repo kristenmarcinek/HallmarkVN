@@ -17,6 +17,9 @@ image markhall day = "/bg/markhall day.jpg"
 image bakery = "/bg/bakery.jpg"
 image airport = "/bg/airport.jpg"
 
+#---CG---
+image monica cg 1 = "/cg/monica cg 1.png"
+
 #---MONICA---
 image m angry = "/monica/m angry.png"
 image m angry b = "/monica/m angry b.png"
@@ -220,17 +223,12 @@ label start:
 
     "To make up for the dumpster fire that was your last listicle, your boss assigned you to work with Monica, a senior journalist at Buzzread."
 
-    hide mc with dissolve
-
-    show m neutral with dissolve
+    scene monica cg 1 with  fade
 
     "Monica’s next big project was practically guaranteed to go viral: {i}The Top 10 Small Town Getaways That Will Have You Living Your Best “Christmas Movie Protagonist” LIFE. {/i}"
 
-    show m smirk
-
     m "Bitches love Christmas movies. Don't ask me why - I can't stand 'em - but this shit's bound to go viral!"
 
-    show m neutral
 
     "The two of you have spent the last month and a half traveling to every quaint town in New England, picking out the best bed and breakfasts."
 
@@ -281,13 +279,10 @@ label start:
 
     mc neutral "Right. Let’s just get going. Our SuperLift is downstairs."
 
-    scene markhall day
-    show m neutral
-    with dissolve
+    scene airport with fade
 
     "The drive to the airport is a little over an hour. You and Monica get stuffed into the back of the SuperLift, during which the driver insists on blasting the latest Christmas album by Mike Bubbles."
 
-    scene airport
 
     "By the time you finally get to the airport, a light flurry has started. Monica clutches her well-tailored suit jacket a little tighter to her."
 
@@ -301,6 +296,7 @@ label start:
 
     c "[player]!? [player], is that you!?"
 
+    #START charlie cg
     show c smile with dissolve
 
     c "Holy smokes, it is you! [player]! How’ve you been?"
@@ -312,6 +308,7 @@ label start:
     c "It’s me! Charlie! Charlie Baker from school!"
 
     "Holy crap! You used to play with a kid named Chucky when you were little. Looks like little Chucky Baker got BIG!"
+    #END charlie cg
 
     mc surprise "Chuck - I mean - Cha- Charlie?! You look… different!"
 
@@ -333,13 +330,14 @@ label start:
 
     c "A major blizzard blew through New York. Every flight headed that way has been-"
 
-    scene airport with fade
-
-    show c surprise
+    scene airport
+    show c sad
+    with dissolve
 
     m "CANCELED?! WHAT DO YOU MEAN CANCELED?!"
+    show c surprise
 
-    show c surprise at left with dissolve
+    show c surprise at left with ease
     show m angry at right with dissolve
 
     m "Unbelievable! The forecast called for clear skies! How’s a blizzard just appear out of thin air?!"
@@ -356,7 +354,7 @@ label start:
 
     show m neutral at right
 
-    m "Pleasure to meet you, Charlie"
+    m "Pleasure to meet you, Charlie."
 
     "She doesn’t look too pleased."
 
