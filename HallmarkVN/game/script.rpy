@@ -6,6 +6,10 @@
 define mc = Character("[player]", image="mc")
 define c = Character("Charlie")
 define m = Character("Monica")
+define b = Character("Bailey")
+
+define n_nvl = Character("Nighten", kind=nvl, image="nighten", callback=Phone_SendSound)
+define e_nvl = Character("Eileen", kind=nvl, callback=Phone_ReceiveSound)
 
 #---BACKGROUNDS---
 image office = "/bg/office.jpg"
@@ -381,6 +385,59 @@ label start:
         jump choice1_monica
     else:
         jump choice1_charlie
+
+    label prologue_2:
+        show m neutral with dissolve
+
+        m "Soooo… good news and bad news. Good news is, I got us a room. Bad news is, they already turned our old room over to some couple on their honeymoon."
+
+        mc surprise "Okay… But we got a room, right? What’s the bad news?"
+
+        m "Well, our old room was the last double. This room only has one bed. But, whatever. It’s fine, we’ll make it work. I’ll sleep on the floor."
+
+        "You and Monica lug your bags up to the room and sure enough, there’s only one bed."
+
+        show m sigh
+
+        m "I’m gonna shower, then we can talk dinner plans."
+
+        hide m sigh with dissolve
+
+        scene hotel
+
+        "You lay on your bed, doomscrolling through InstantPic, while Monica takes over the bathroom.  Mid-scroll, you get a text from Charlie. It’s a picture of an apple pie cooling on a kitchen counter."
+
+        c "By the way, in case you don’t have dinner plans…"
+
+        "An hour later, Monica comes out of the bathroom looking refreshed… and wearing a pantsuit nearly identical to the one she was wearing earlier that day."
+
+        show m neutral with dissolve
+
+        m "Christ, I needed that… Okay. You hungry?"
+
+        mc done "Starving…"
+
+        m "M’kay… let’s see what’s open. We don’t actually have a ton of money left on the company card… I used a lot of it to book this room for the next couple nights. But we could get some cheap take out if you want? My treat?"
+
+        menu:
+            "Who do you get dinner with?"
+
+            "Get take out with Monica.":
+                $ takeout = True
+                $ monica_affection += 10
+                $ charlie_affection -= 10
+
+            "Take Charlie up on his offer.":
+                $ takeout = False
+                $ monica_affection -= 10
+                $ charlie_affection += 10
+        
+        if takeout:
+            jump choice2_monica
+        else:
+            jump choice2_charlie
+
+    label chapter1:
 
 
 

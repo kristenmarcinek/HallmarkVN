@@ -34,3 +34,18 @@ label choice1_monica:
     "You unload the bags out of the back of the SuperLift and bring them into the lobby."
 
     jump prologue_2
+
+label choice2_monica:
+    scene hotel
+
+    "You decide to take Monica up on her offer. After all, you’re traveling together, and she is your coworker. It makes more sense to have dinner with her than it does to reconnect with some rando from grade school…"
+
+    show m neutral with dissolve
+
+    mc neutral "Take out sounds great! You wanna call it in and I’ll run out and grab it?"
+
+    show m smirk
+
+    m "Sounds like a plan. Hurry back! I’m starving."
+
+    jump chapter1
