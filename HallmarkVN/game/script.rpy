@@ -14,6 +14,8 @@ define e_nvl = Character("Eileen", kind=nvl, callback=Phone_ReceiveSound)
 #---BACKGROUNDS---
 image office = "/bg/office.jpg"
 image markhall day = "/bg/markhall day.jpg"
+image bakery = "/bg/bakery.jpg"
+image airport = "/bg/airport.jpg"
 
 #---MONICA---
 image m angry = "/monica/m angry.png"
@@ -331,7 +333,7 @@ label start:
 
     c "A major blizzard blew through New York. Every flight headed that way has been-"
 
-    scene airport
+    scene airport with fade
 
     show c surprise
 
@@ -364,7 +366,7 @@ label start:
 
     c "Oh, don’t worry about that! I can give you both a ride back in my truck!"
 
-    m "Oh, that’s okay, we wouldn’t want to {i}impose{/i} right, [player]?" 
+    m "Oh, that’s okay, we wouldn’t want to {i}impose{/i} right, [player]?"
 
     c "Aw, it’s no big deal! Right, [player]?"
 
@@ -431,7 +433,7 @@ label start:
                 $ takeout = False
                 $ monica_affection -= 10
                 $ charlie_affection += 10
-        
+
         if takeout:
             jump choice2_monica
         else:
