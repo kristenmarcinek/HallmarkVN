@@ -352,28 +352,17 @@ screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
     tag menu
+    imagemap:
+        ground "gui/main menu.png"
+        hover "gui/main menu hover.png"
 
-    add gui.main_menu_background
-
-    ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
-
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use navigation
-
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
+        hotspot (7, 909, 310, 71) action Start()
+        hotspot (337, 914, 267, 63) action ShowMenu("load")
+        hotspot (627, 912, 264, 63) action ShowMenu("preferences")
+        hotspot (932, 911, 337, 64) action [ShowMenu("gallery")]
+        # hotspot (1295, 908, 326, 70) action [ShowMenu("credits")]
+        # (we don't have a credits menu yet)
+        hotspot (1651, 914, 261, 66) action Quit(confirm=True)
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -385,7 +374,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    background "gui/main menu.png"
 
 style main_menu_vbox:
     xalign 1.0

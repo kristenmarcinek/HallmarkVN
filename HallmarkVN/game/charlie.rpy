@@ -7,7 +7,7 @@ label choice1_charlie:
     c "That’s what I’m sayin’! C’mon! That’s my truck right over there. We can throw your bags in the bed. One of you will have to sit in the back with Bailey though."
 
     hide c smile b
-    hide m sigh
+    hide m
     with dissolve
     # show b happy
     # with dissolve
@@ -18,7 +18,7 @@ label choice1_charlie:
     # hide b happy with dissolve
     show m angry coat with dissolve
 
-    mc open "I’ll sit in the back."
+    mc open coat "I’ll sit in the back."
 
     scene airport with dissolve
 
@@ -28,7 +28,7 @@ label choice1_charlie:
 
     "In front of the hotel…"
 
-    show m neutral with dissolve
+    show m neutral coat with dissolve
 
     m "Alright. [player], you and Charlie grab the bags. I’ll go see if we can get our room back for a couple nights."
 
@@ -43,7 +43,7 @@ label choice1_charlie:
 
     "You exchange numbers with Charlie."
 
-    mc open b "Got it. Thanks, Charlie. I’ll see you later!"
+    mc open coat b "Got it. Thanks, Charlie. I’ll see you later!"
 
     hide c smile with dissolve
 

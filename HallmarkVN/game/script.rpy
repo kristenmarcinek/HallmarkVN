@@ -26,14 +26,28 @@ image charlie cg 1 = "/cg/charlie cg 1.png"
 #---MONICA---
 image m angry = "/monica/m angry.png"
 image m angry b = "/monica/m angry b.png"
+image m angry coat = "/monica/m angry coat.png"
+image m angry coat b = "/monica/m angry coat b.png"
+
 image m neutral = "/monica/m neutral.png"
 image m neutral b = "/monica/m neutral b.png"
+image m neutral coat = "/monica/m neutral coat.png"
+image m neutral coat b = "/monica/m neutral coat b.png"
+
 image m sigh = "/monica/m sigh.png"
 image m sigh b = "/monica/m sigh b.png"
+image m sigh coat = "/monica/m sigh coat.png"
+image m sigh coat b = "/monica/m sigh coat b.png"
+
 image m smirk = "/monica/m smirk.png"
 image m smirk b = "/monica/m smirk b.png"
+image m smirk coat = "/monica/m smirk coat.png"
+image m smirk coat b = "/monica/m smirk coat b.png"
+
 image m surprise = "/monica/m surprise.png"
 image m surprise b = "/monica/m surprise b.png"
+image m surprise coat = "/monica/m surprise coat.png"
+image m surprise coat b = "/monica/m surprise coat b.png"
 
 #---CHARLIE---
 image c angry = "/charlie/c angry.png"
@@ -51,42 +65,193 @@ image c wink b = "/charlie/c wink b.png"
 
 # ---MC SPRITE---
 
-# when we add the male sprite in later we're probably gonna have to put this under an if statement somehow
+#angry expression
+image side mc angry = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc angry.png",
+"appearance == 'masc'", "/mc male/mc mangry.png",
+)
 
-# if chosen appearance is feminine
-if appearance is "fem" or appearance == "fem":
-    # side images
-    image side mc angry = "/mc/mc angry.png"
-    image side mc angry b = "/mc/mc angry b.png"
-    image side mc confused = "/mc/mc confused.png"
-    image side mc confused b = "/mc/mc confused b.png"
-    image side mc done = "/mc/mc done.png"
-    image side mc done b = "/mc/mc done b.png"
-    image side mc neutral = "/mc/mc neutral.png"
-    image side mc neutral b = "/mc/mc neutral b.png"
-    image side mc open = "/mc/mc open.png"
-    image side mc open b = "/mc/mc open b.png"
-    image side mc sad = "/mc/mc sad.png"
-    image side mc sad b = "/mc/mc sad b.png"
-    image side mc surprise = "/mc/mc surprise.png"
-    image side mc surprise b = "/mc/mc surprise b.png"
+image side mc angry b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc angry b.png",
+"appearance == 'masc'", "/mc male/mc mangry b.png",
+)
 
-    # mc half images
-    image mc angry = "/mc/mc angry full.png"
-    image mc confused = "/mc/mc confused full.png"
-    image mc done = "/mc/mc done full.png"
-    image mc neutral = "/mc/mc neutral full.png"
-    image mc open = "/mc/mc open full.png"
-    image mc sad = "/mc/mc sad full.png"
-    image mc surprise = "/mc/mc surprise full.png"
+image side mc angry coat = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc angry coat.png",
+"appearance == 'masc'", "/mc male/mc mangry coat.png",
+)
 
-# if chose appearance is masculine
-elif appearance is "masc" or appearance == "masc":
-    return
+image side mc angry coat b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc angry coat b.png",
+"appearance == 'masc'", "/mc male/mc mangry coat b.png",
+)
 
-# if nothing is chosen/it breaks
-else:
-    return
+#confused expression
+
+image side mc confused = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc confused.png",
+"appearance == 'masc'", "/mc male/mc mconfused.png",
+)
+
+image side mc confused b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc confused b.png",
+"appearance == 'masc'", "/mc male/mc mconfused b.png",
+)
+
+image side mc confused coat = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc confused coat.png",
+"appearance == 'masc'", "/mc male/mc mconfused coat.png",
+)
+
+image side mc confused coat b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc confused coat b.png",
+"appearance == 'masc'", "/mc male/mc mconfused coat b.png",
+)
+
+#done expression
+image side mc done = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc done.png",
+"appearance == 'masc'", "/mc male/mc mdone.png",
+)
+
+image side mc done b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc done b.png",
+"appearance == 'masc'", "/mc male/mc mdone b.png",
+)
+
+image side mc done coat = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc done coat.png",
+"appearance == 'masc'", "/mc male/mc mdone coat.png",
+)
+
+image side mc done coat b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc done coat b.png",
+"appearance == 'masc'", "/mc male/mc mdone coat b.png",
+)
+
+#neutral expression
+image side mc neutral = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc neutral.png",
+"appearance == 'masc'", "/mc male/mc mneutral.png",
+)
+
+image side mc neutral b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc neutral b.png",
+"appearance == 'masc'", "/mc male/mc mneutral b.png",
+)
+
+image side mc neutral coat = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc neutral coat.png",
+"appearance == 'masc'", "/mc male/mc mneutral coat.png",
+)
+
+image side mc neutral coat b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc neutral coat b.png",
+"appearance == 'masc'", "/mc male/mc mneutral coat b.png",
+)
+
+#open expression
+
+image side mc open = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc open.png",
+"appearance == 'masc'", "/mc male/mc mopen.png",
+)
+
+image side mc open b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc open b.png",
+"appearance == 'masc'", "/mc male/mc mopen b.png",
+)
+
+image side mc open coat = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc open coat.png",
+"appearance == 'masc'", "/mc male/mc mopen coat.png",
+)
+
+image side mc open coat b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc open coat b.png",
+"appearance == 'masc'", "/mc male/mc mopen coat b.png",
+)
+
+#sad expression
+
+image side mc sad = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc sad.png",
+"appearance == 'masc'", "/mc male/mc msad.png",
+)
+
+image side mc sad b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc sad b.png",
+"appearance == 'masc'", "/mc male/mc msad b.png",
+)
+
+image side mc sad coat = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc sad coat.png",
+"appearance == 'masc'", "/mc male/mc msad coat.png",
+)
+
+image side mc sad coat b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc sad coat b.png",
+"appearance == 'masc'", "/mc male/mc msad coat b.png",
+)
+
+#surprise expression
+
+image side mc surprise = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc surprise.png",
+"appearance == 'masc'", "/mc male/mc msurprise.png",
+)
+
+image side mc surprise b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc surprise b.png",
+"appearance == 'masc'", "/mc male/mc msurprise b.png",
+)
+
+image side mc surprise coat = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc surprise coat.png",
+"appearance == 'masc'", "/mc male/mc msurprise coat.png",
+)
+
+image side mc surprise coat b = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc surprise coat b.png",
+"appearance == 'masc'", "/mc male/mc msurprise coat b.png",
+)
+
+#all half images
+
+image mc angry = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc angry full.png",
+"appearance == 'masc'", "/mc male/mc mangry full.png",
+)
+
+image mc confused = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc confused full.png",
+"appearance == 'masc'", "/mc male/mc mconfused full.png",
+)
+
+image mc done = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc done full.png",
+"appearance == 'masc'", "/mc male/mc mdone full.png",
+)
+
+image mc neutral = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc neutral full.png",
+"appearance == 'masc'", "/mc male/mc mneutral full.png",
+)
+
+image mc open = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc open full.png",
+"appearance == 'masc'", "/mc male/mc mopen full.png",
+)
+
+image mc sad = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc sad full.png",
+"appearance == 'masc'", "/mc male/mc msad full.png",
+)
+
+image mc surprise = ConditionSwitch(
+"appearance == 'fem'", "/mc/mc surprise full.png",
+"appearance == 'masc'", "/mc male/mc msurprise full.png",
+)
 
 # ---COSMETIC STUFF---
 
@@ -159,20 +324,17 @@ label start:
 # ---START---
 
     #note to kayla (aka me): make this an imagemap or some shit in the future
-    #note to kristen: i commented this out bc i figured for mike's demo we aren't using this feature, at least for now
 
-    # "Choose your appearance!"
+    "Choose your appearance!"
 
-    # show mc neutral
-    #
-    # menu:
-    #     "masculine":
-    #         $ appearance = "masc"
-    #
-    #     "feminine":
-    #         $ appearance = "fem"
-    #
-    # hide mc neutral
+    menu:
+        "masculine":
+            $ appearance = "masc"
+
+        "feminine":
+            $ appearance = "fem"
+
+    show mc neutral with dissolve
 
     "Choose your pronouns!"
 
@@ -251,7 +413,7 @@ label start:
     #scene showing_monica_around - kayla
     #do you want this to be a CG???
 
-    show m neutral with dissolve
+    show m neutral coat with dissolve
 
     #if i have time i can make special cut in images for this. IF I HAVE TIME. - kayla
 
@@ -260,7 +422,7 @@ label start:
 
     "Most depressingly, the lake you used to go ice skating on that now doesn’t even freeze over half the time because global warming’s impending heat death of our planet."
 
-    show m smile
+    show m smile coat
 
     m "Holy shit, [player]. This place has everything. A snowman building contest? Sledding races? A town-wide snowball fight extravaganza? [player], you practically grew up in the {i}North Pole{/i}."
 
@@ -269,18 +431,18 @@ label start:
 
     #it's coded so that this sprite will not go away even when mc isn't speaking, but to clear it you can cheese it by using the scene function, bc that makes it disappear
 
-    mc confused "Yeah. You take one too many snowballs to the face and the joy’s kind of lost on you."
+    mc confused coat "Yeah. You take one too many snowballs to the face and the joy’s kind of lost on you."
 
     m "Yeah, no shit. I see why you got out of this hell hole. There isn’t even a Starcups. No wonder your last article sucked."
 
-    mc angry "It wasn’t that bad…"
+    mc angry coat "It wasn’t that bad…"
 
-    show m smirk
+    show m smirk coat
 
     m "Yeah, it was. But don’t worry. Once we blow the lid off this sleepy, little snoozefest of a town, all the basic bitches will be crawling out of the woodwork to take their Christmas photos here and then there’ll be a Starcups on every block."
     m "And, you’ll be back on the boss’s good side!"
 
-    mc neutral "Right. Let’s just get going. Our SuperLift is downstairs."
+    mc neutral coat "Right. Let’s just get going. Our SuperLift is downstairs."
 
     scene airport with fade
 
@@ -289,7 +451,7 @@ label start:
 
     "By the time you finally get to the airport, a light flurry has started. Monica clutches her well-tailored suit jacket a little tighter to her."
 
-    show m sigh with dissolve
+    show m sigh coat with dissolve
 
     m "Fuck, it’s freezing. I’ll go check our bags. Will you get me a coffee? We should still have a little money on the company card…"
 
@@ -303,7 +465,7 @@ label start:
 
     c "Holy smokes, it is you! [player]! How’ve you been?"
 
-    mc "Uhhh… do I know you?"
+    mc coat "Uhhh… do I know you?"
 
     c "It’s me! Charlie! Charlie Baker from school!"
 
@@ -311,23 +473,23 @@ label start:
 
     scene airport with fade
 
-    mc surprise "Chuck - I mean - Cha- Charlie?! You look… different!"
+    mc surprise coat "Chuck - I mean - Cha- Charlie?! You look… different!"
 
     show c smile with dissolve
 
     c "You haven’t aged a day! You look fantastic! How have you been?!"
 
-    mc neutral b "Oh, you know. Good. Life’s good. Work is… work. You?"
+    mc neutral coat b "Oh, you know. Good. Life’s good. Work is… work. You?"
 
     c "Oh, I hear that. My dad and I have been working overtime at the bakery now that it’s just the two of us. Say-! If you’re in town visiting you’ve totally gotta stop by. He would love to see you!"
 
-    mc surprise "Oh-! No. I’m not staying. In fact, we were actually just leaving."
+    mc surprise coat "Oh-! No. I’m not staying. In fact, we were actually just leaving."
 
     show c sad
 
     c "Leaving? Ah jeez. You mean you haven’t heard?"
 
-    mc confused "Heard what…?"
+    mc confused coat "Heard what…?"
 
     c "A major blizzard blew through New York. Every flight headed that way has been-"
 
@@ -339,7 +501,7 @@ label start:
     show c surprise
 
     show c surprise at left with ease
-    show m angry at right with dissolve
+    show m angry coat at right with dissolve
 
     m "Unbelievable! The forecast called for clear skies! How’s a blizzard just appear out of thin air?!"
 
@@ -349,17 +511,17 @@ label start:
 
     m "[player], who’s this?"
 
-    mc open "Oh, this is Charlie. We went to school together. Charlie, this is Monica."
+    mc open coat "Oh, this is Charlie. We went to school together. Charlie, this is Monica."
 
     c "Hiya, Monica!"
 
-    show m neutral at right
+    show m neutral coat at right
 
     m "Pleasure to meet you, Charlie."
 
     "She doesn’t look too pleased."
 
-    show m sigh at right
+    show m sigh coat at right
 
     m "[player], I guess we’re grounded for a couple more days. We should get a SuperLift back to the hotel."
 
@@ -388,11 +550,11 @@ label start:
         jump choice1_charlie
 
     label prologue_2:
-        show m neutral with dissolve
+        show m neutral coat with dissolve
 
         m "Soooo… good news and bad news. Good news is, I got us a room. Bad news is, they already turned our old room over to some couple on their honeymoon."
 
-        mc surprise "Okay… But we got a room, right? What’s the bad news?"
+        mc surprise coat "Okay… But we got a room, right? What’s the bad news?"
 
         m "Well, our old room was the last double. This room only has one bed. But, whatever. It’s fine, we’ll make it work. I’ll sleep on the floor."
 

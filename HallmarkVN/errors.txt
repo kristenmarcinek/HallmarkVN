@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 6: invalid syntax
-    Character("[player]", color="#dead71" image="mc")
-                                           ^
+File "game/script.rpy", line 330: expected statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070503n
-Wed Dec 14 16:41:27 2022
+Mon Dec 26 20:09:41 2022
