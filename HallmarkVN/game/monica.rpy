@@ -1,11 +1,11 @@
 label choice1_monica:
     show c neutral at left
-    show m neutral at right
+    show m neutral coat at right
 
-    mc neutral "Oh, that’s okay, Charlie. We can just put it on the company card."
+    mc neutral coat "Oh, that’s okay, Charlie. We can just put it on the company card."
 
     show c sad at left
-    show m smirk at right
+    show m smirk coat at right
 
     m "Exactly! The good ol’ company card. So thanks anyway, Charlie!"
 
@@ -13,9 +13,9 @@ label choice1_monica:
 
     "You exchange numbers with Charlie."
 
-    mc neutral b "Got it. Thanks, Charlie."
+    mc neutral coat b "Got it. Thanks, Charlie."
 
-    show m neutral
+    show m neutral coat
 
     m "Don’t worry about us, Charlie! Us city girls can take care of ourselves, right, [player]? Oh look - there’s our SuperLift! C’mon!"
 
@@ -25,7 +25,7 @@ label choice1_monica:
 
     "Back outside the hotel…"
 
-    show m neutral with dissolve
+    show m neutral coat with dissolve
 
     m "Alright. [player], you grab the bags and I’ll see if we can get our room back for a couple more nights."
 

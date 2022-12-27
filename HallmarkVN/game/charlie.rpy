@@ -1,8 +1,8 @@
 label choice1_charlie:
-    mc neutral "I mean, if he’s going that way anyway we might as well… And we can save the company a few bucks, right?"
+    mc neutral coat "I mean, if he’s going that way anyway we might as well… And we can save the company a few bucks, right?"
 
     show c smile b at left
-    show m angry at right
+    show m angry coat at right
 
     c "That’s what I’m sayin’! C’mon! That’s my truck right over there. We can throw your bags in the bed. One of you will have to sit in the back with Bailey though."
 
@@ -16,7 +16,7 @@ label choice1_charlie:
     b "WOOF!!"
 
     # hide b happy with dissolve
-    show m angry with dissolve
+    show m angry coat with dissolve
 
     mc open "I’ll sit in the back."
 
