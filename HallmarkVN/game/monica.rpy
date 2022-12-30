@@ -49,3 +49,54 @@ label choice2_monica:
     m "Sounds like a plan. Hurry back! I’m starving."
 
     jump chapter1
+
+label chapter1_monica:
+    "Evening."
+
+    "You order take-out from the only Chinese restaurant in town: Panda Cafe. Luckily, it just so happens to be right around the corner so it’s a quick walk there and back."
+
+    "Not only does it get you out of the cold quicker but the chances of you running into anyone else from high school today are slim to none. A win-win."
+
+    "When you get back to the hotel room Monica is sitting cross-legged on the bed, clicking through TV channels."
+
+    show m neutral with dissolve
+
+    m "What the fuck is wrong with your hometown, [player]?!"
+
+    mc confused b "What, you mean besides the fact that it’s a small town in the middle of nowhere?"
+
+    m "Don’t get me wrong, it’s still a snoozefest but I’m past that. I’m talking about the {b}TV!{/b}"
+
+    mc confused "What about it?"
+
+    show m angry
+
+    m "There’s {b}nothing but shitty Christmas movies on! Look!{/b}"
+
+    "Sure enough, as Monica clicks through the channels your senses are bombarded by the gaudy, cheerful, tell-tell staples of the Christmas movie genre."
+
+    "You see ugly sweater after ugly sweater, plaid, tinsel, wrapping paper, kisses under the mistletoe. Monica flips through 10 channels, just to get her point across - a different movie on each of them."
+
+    mc neutral "Oh. Yeah."
+
+    show m sigh
+
+    m "You mean you {b}knew{/b} about this?"
+
+    mc "I mean... yeah. They do it every year. You get the news in the morning and at night, but otherwise pretty much every channel is just… that crap."
+
+    show m surprise
+
+    m "But… why?!"
+
+    mc neutral "I told you. They really, {b}really{/b} like Christmas here."
+
+    m "Christ. No wonder you got out when you could…"
+
+    show m neutral
+
+    m "Pass me the wontons, would you?"
+
+    "You and Monica begin divvying up your feast of Chinese takeout."
+
+    
