@@ -72,3 +72,6 @@ label choice2_charlieB:
     m "I’ll pass. You go ahead though."
 
     jump chapter1
+
+label chapter1_charlie:
+    

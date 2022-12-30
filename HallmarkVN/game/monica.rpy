@@ -51,6 +51,8 @@ label choice2_monica:
     jump chapter1
 
 label chapter1_monica:
+    scene hotel with dissolve
+
     "Evening."
 
     "You order take-out from the only Chinese restaurant in town: Panda Cafe. Luckily, it just so happens to be right around the corner so it’s a quick walk there and back."
@@ -99,4 +101,67 @@ label chapter1_monica:
 
     "You and Monica begin divvying up your feast of Chinese takeout."
 
+    mc confused "Wait - so if you hate Christmas so much… why are we writing this article? Wasn’t it your idea?"
     
+    "Monica answers between chowing down bites of Chow mein."
+
+    show m sigh
+
+    m "I don’t hate Christmas. I hate fake Christmas."
+
+    mc confused "Fake Christmas?"
+
+    m "Yeah. It’s a bullshit time of year where you have to see family you hate and pretend to like them. It’s the small talk at holiday parties. It’s pretending to like hearing the same four Christmas carols on the radio."
+
+    m "It’s exactly that kind of crap you see in Christmas movies. Where the protagonist leaves her awesome, wonderful, well paying job in the big city and decides to go live in some shithole town because some {b}guy{/b} smiled at her and gave her a cookie and suddenly she thinks she’s in love."
+
+    m "Love doesn’t work that way. Life isn’t like that."
+
+    show m angry
+
+    "Monica stabs heatedly at a piece of chicken with her plastic fork."
+
+    mc surprise b "Wow. I didn’t realize you felt that strongly about it."
+
+    show m sigh
+
+    "That’s because we only ever talk about work stuff."
+
+    "You blink, stunned. She’s harsh, but she has a point. An awkward silence passes."
+
+    menu:
+        "You’re right. I’m sorry. This trip has kind of been all about my past. We haven’t really talked about you.":
+            $ mSappy = True
+            $ monica_affection -= 5
+        "Stay silent.":
+            $ mSappy = False
+            $ monica_affection += 5
+    if mSappy:
+        jump chapter1_monica_A
+    else:
+        jump chapter1_monica_B
+
+label chapter1_monica_A:
+    mc sigh "You’re right. I’m sorry. This trip has kind of been all about my past. We haven’t really talked about you."
+
+    show m angry b
+
+    m "Don’t get all sappy on me now. I didn’t say that was a bad thing. I’m just saying it’s true. We’ve never really hung out for an extended period of time like this before."
+
+    jump chapter1_monica_pt_2
+
+label chapter1_monica_B:
+    "You fall silent, unsure of what to say, so you decide to pick at a piece of chicken instead."
+
+    show m sigh b
+
+    m "...That came out bitchier than I meant it. Sorry."
+
+    mc surprise b "Oh! That’s… That’s okay."
+
+    m "I didn’t mean it in a bad way. I just mean we’ve never really hung out for an extended period of time like this before, you know?"
+
+    jump chapter1_monica_pt_2
+
+label chapter1_monica_pt_2:
+    mc confused b "You’re right."
