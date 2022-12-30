@@ -12,6 +12,7 @@ init offset = -1
 style default:
     properties gui.text_properties()
     language gui.language
+    outlines [ (absolute(1.5), "#000", absolute(1), absolute(1)) ]
 
 style input:
     properties gui.text_properties("input", accent=True)
@@ -136,7 +137,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/window.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -145,7 +146,7 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("gui/window top.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
@@ -353,8 +354,8 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
     imagemap:
-        ground "gui/main menu.png"
-        hover "gui/main menu hover.png"
+        ground "gui/menus/main menu.png"
+        hover "gui/menus/main menu hover.png"
 
         hotspot (7, 909, 310, 71) action Start()
         hotspot (337, 914, 267, 63) action ShowMenu("load")

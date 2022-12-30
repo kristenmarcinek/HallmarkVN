@@ -334,8 +334,6 @@ label start:
         "feminine":
             $ appearance = "fem"
 
-    show mc neutral with dissolve
-
     "Choose your pronouns!"
 
     menu:
@@ -360,11 +358,12 @@ label start:
             $ proReflexive = "themselves"
             $ toBe = "are"
 
-    window show
     scene office
 
 
-    show mc neutral with dissolve
+    show mc neutral
+    with fade
+    window show
 
 
     label name:
@@ -388,7 +387,7 @@ label start:
 
     "To make up for the dumpster fire that was your last listicle, your boss assigned you to work with Monica, a senior journalist at Buzzread."
 
-    scene monica cg 1 with  fade
+    scene monica cg 1 with fade
 
     "Monica’s next big project was practically guaranteed to go viral: {i}The Top 10 Small Town Getaways That Will Have You Living Your Best “Christmas Movie Protagonist” LIFE. {/i}"
 
@@ -398,6 +397,7 @@ label start:
     "The two of you have spent the last month and a half traveling to every quaint town in New England, picking out the best bed and breakfasts."
 
     "The final stop on your little road trip just happens to be your hometown."
+    $persistent.monica1=True
 
     scene markhall day with fade
     play music "Almost Christmas.mp3" fadein 1 fadeout 1
@@ -470,6 +470,8 @@ label start:
     c "It’s me! Charlie! Charlie Baker from school!"
 
     "Holy crap! You used to play with a kid named Chucky when you were little. Looks like little Chucky Baker got BIG!"
+
+    $persistent.charlie1=True
 
     scene airport with fade
 

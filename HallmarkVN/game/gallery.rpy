@@ -2,9 +2,9 @@ screen gallery():
     tag menu
 
     imagemap:
-        ground "gui/gallery menu.png"
-        hover "gui/gallery menu hover.png"
-        selected_idle "gui/gallery menu hover.png"
+        ground "gui/menus/gallery menu.png"
+        hover "gui/menus/gallery menu hover.png"
+        selected_idle "gui/menus/gallery menu hover.png"
 
         hotspot (0, 391, 399, 102) action Return()
         hotspot (0, 511, 391, 101) action ShowMenu("load")
@@ -15,8 +15,8 @@ screen gallery():
 
     imagemap: #tiny monica cg 1 for the gallery
 
-        xpos 50
-        ypos 141
+        xpos 509
+        ypos 278
         ground Null()
         hover Null()
 
@@ -29,8 +29,8 @@ screen gallery():
 
     imagemap: #tiny monica cg 2 for the gallery (which doesn't exist yet)
 
-        xpos 50
-        ypos 141
+        xpos 1126
+        ypos 278
         ground Null()
         hover Null()
 
@@ -42,8 +42,8 @@ screen gallery():
 
     imagemap: #tiny charlie cg 1
 
-        xpos 50
-        ypos 141
+        xpos 509
+        ypos 637
         ground Null()
         hover Null()
 
