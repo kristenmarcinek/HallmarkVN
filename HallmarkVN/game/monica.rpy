@@ -165,3 +165,61 @@ label chapter1_monica_B:
 
 label chapter1_monica_pt_2:
     mc confused b "You’re right."
+
+    show m smirk
+
+    m "I usually am."
+
+    mc neutral "Well, why don’t we fix that?"
+
+    show m surprise
+
+    m "Isn’t that what we’re doing right now?"
+
+    mc "Well, yeah. But I mean tomorrow! All flights to New York are grounded so we have another day in town. Let’s spend it together and make a deal. No work talk"
+
+    show m neutral
+
+    m "Yeah, okay, I think I can agree to that."
+
+    mc neutral "Tomorrow is the townwide snowball fight! We can go to that if you want!"
+
+    show m angry
+
+    m "Ugh. Isn’t there anything else to do in this town?"
+
+    mc "Nope. It’s either snowballs or stay in and watch shitty Christmas movies."
+
+    show m sigh
+
+    m "Alright. Snowballs it is."
+
+    mc "C’mon. It’ll be fine! First one to get hit in the face buys the hot chocolate?"
+
+    show m smirk
+
+    m "Oh you’re going down."
+
+    scene hotel
+
+    "The two of you pass the right of the night in peace, chatting about life, love, and anything except work."
+
+    "At the end of the night, Monica insists you take the bed and decides to sleep on the floor."
+
+    mc confused "Are you sure…? There’s plenty of room!"
+
+    show m smirk with dissolve
+
+    m "Yeah, it’s fine, trust me. I’m technically your supervisor right now. Sleeping in the same bed would be like an HR violation just waiting to happen. And what kind of boss makes their subordinate sleep on the floor? A bad one, that’s who."
+
+    mc "Yeah, but…"
+
+    show m neutral
+
+    m "Shhh. Go to sleep. I’ll get payback when I deck you in the face with a snowball tomorrow."
+
+    "With that, Monica flips off the lights and settles into the nest she made herself on the floor."
+
+    mc neutral "Night, Monica…"
+
+    m "Night, [player]"
