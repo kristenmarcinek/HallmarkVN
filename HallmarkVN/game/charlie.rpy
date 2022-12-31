@@ -100,4 +100,53 @@ label chapter1_charlie:
 
     mc neutral "So it’s just us then?"
 
+    show c neutral
+
+    c "Yup! Dad went out with some buddies so we’ve got the run of the place. I hope spaghetti’s okay?"
+
+    mc "Spaghetti’s great!"
+    
+    "Charlie leads you towards the dining room table where a generous helping of noodles has already been served onto your plate. In the middle of the table sits the delicious looking apple pie that he used to entice you over in the first place."
+
+    mc surprise "That’s quite the pie, Charlie… You work at the bakery with your dad, right?"
+
+    c "Yeah! I just started last year. My bread still needs work but pie’s become something of my speciality"
+
+    show c smile
+
+    "Charlie puffs out his chest, clearly looking more than a little pleased with himself."
+
+    mc neutral "Just last year? What were you doing before then?"
+
+    show c neutral
+
+    c "Ahh, I was living in Boston…"
+
+    mc surprise "Really? I can’t really see you in a big city!"
+
+    c "Yeah! I was actually really liking it. I moved out there with a buddy of mine. I was working as a barista and going to law school at night. It was nice."
+
+    mc "Law school! That’s awesome, Charlie! What happened? How’d you wind up back here? I didn’t realize you tried to get out like me!"
+
+    show c sad
+
+    c "My uh… My mom got sick. She declined pretty rapidly. It was really hard on my dad, so I decided to move back to be with him. It’ll actually be one year on Christmas Eve…"
+
+    mc "Oh, jeez… Charlie… I’m sorry, I had no idea…"
+
+    show c neutral
+
+    c "Ahh it’s okay. We’re making it work. And besides, I actually really like working at the bakery. It’s nice being able to finish a day’s work, working with my hands, and say ‘Yeah. I made that thing!’ and have people enjoy it, y’know?"
+
+    mc done "“I guess so. The last thing I did at work was kind of a huge flop."
+
+    c "Whadja do? Where do you work now?"
+
+    mc "I work at BuzzRead, with that girl Monica you met at the airport. My last listicle bombed so my boss is having me work with her on the next one."
+
+    show c smile
+
+    
+
+
     
