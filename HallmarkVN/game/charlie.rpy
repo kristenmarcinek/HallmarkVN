@@ -74,4 +74,30 @@ label choice2_charlieB:
     jump chapter1
 
 label chapter1_charlie:
+    scene hotel with fade
+
+    "Evening"
+
+    "When Charlie texts you the address you recognize it immediately. It’s just a couple of blocks from your hotel - the house he grew up in. You used to play there every now and then. It had a great backyard and a tire swing."
+
+    scene bakery with fade
+
+    "It’s a charming little place on the corner of Main Street tastefully decorated for Christmas with a wreath on the front door and a little candle in every window. You immediately know you have the right place when you hear Charlie’s dog Bailey barking as you walk up the front steps."
+
+    "Before you can even knock the door swings open, revealing a beaming Charlie who is holding Bailey back by the collar."
+
+    show c smile with dissolve
+
+    c "Hey, [player]! Thanks for coming! C’mon in!"
+
+    mc neutral coat "Hey, thanks for having me! Hi, Bailey."
+
+    b "WOOF!"
+
+    show c smile
+
+    c "Here. Lemme take your coat. We’re gonna be right in through there."
+
+    mc neutral "So it’s just us then?"
+
     
