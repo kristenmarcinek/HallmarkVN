@@ -146,7 +146,90 @@ label chapter1_charlie:
 
     show c smile
 
-    
+    c "Oh! That’s so cool! What’s the article about?"
 
+    mc neutral "It’s Monica’s idea. She had this big idea to make it go viral by appealing to people’s love for Christmas. Says it’ll drive tourism here and be good for town. She’s made it her personal mission to make sure Harkmall gets its first Starcups"
+
+    show c surprise
+    
+    c "That’s… awful!"
+
+    mc confused "What? Why?"
+
+    show c sad
+
+    c "The bakery… it’s not doing so well. I mean, I’m helping out as much as I can but I’m nowhere near as good at baking as my mom was. If a Starcups moves in across the street or something… that could put us out of business for good"
+
+    menu:
+        "That’s terrible! I didn’t realize. I’ll see what I can do.":
+            $ noStarcups = True
+            $ charlie_affection += 5
+        "“I’m sure it won’t be that bad! Don’t you think that’s a little overdramatic?"
+            $ noStarcups = False
+            $ charlie_affection -= 5
+    
+    show c neutral
+    
+    c "Don’t get me wrong, I don’t want to tell you how to do your job. Just… think about it. Maybe you can just undersell Harkmall so it stays off the radar…?"
+
+    mc neutral "Well, it’s really Monica’s article so I’ll have to talk to her…"
+
+    c "Ah jeez… Look, maybe don’t mention it after all. I don’t want to end up on her bad side."
+
+    mc neutral "She’s really not that bad once you get to know her."
+
+    show c smile
+
+    c "I’ll take your word for it."
+
+    scene bakery
+
+    "You two continue to chat through dinner. You catch up on life, trade cooking recipes, and reminisce about growing up in Harkmall together. Finally, it’s time for dessert!"
+
+    show c smile
+
+    c "Alriiiiiighty… here you go! One slice of apple pie a la mode…"
+
+    mc neutral b "Charlie-! This is amazing!"
+
+    show c smile b 
+
+    c "You really like it?"
+
+    mc "You really like it?"
+
+    c "Well shucks, thank you [player]! There’s plenty more where that came from, I promise! D’you wanna take the rest of it with you? Give some to Monica?"
+
+    mc neutral "Sure, that sounds like a good idea. She’s bound to be a little grumpy when I get back. I left her in the hotel room and didn’t tell her the only thing on TV tonight was a Christmas movie marathon…"
+
+    show c smile
+
+    c "Oh yeah. You’ll need all the help you can get. Say, if you’re looking for something to do tomorrow while you’re in town… do you two want to hang out at the park tomorrow…?"
+
+    mc confused "“Isn’t tomorrow the big, town-wide snowball fight?"
+
+    c "Well, yeah-! But we wouldn’t have to participate! We could just watch.! Just thought it might be better than hanging out in your hotel room all day…"
+
+    mc "Uh huh… when have you ever {b}just watched{/b} a snowball fight and not gotten involved Charlie?"
+
+    show c smile b 
+
+    c "“Okay, okay you got me. I’m definitely joining in. But you totally don’t have to! It’ll be a fun time either way. And besides… I’ll be bringing Bailey!"
+
+    b "WOOF!"
+
+    mc smile b "Alright, alright. I’ll talk to Monica and see if she wants to come. I’m sure she’ll be happy to get out of the hotel room at least."
+
+    c "Definitely! It’ll be fun."
+
+    scene bakery
+
+    "After you finish your apple pie, you thank Charlie for the dinner and he leads you back towards the front door."
+
+    show c smile
+
+    c "Thanks again for coming, [player]. I had a really great time catching up!"
+
+    mc neutral 
 
     
