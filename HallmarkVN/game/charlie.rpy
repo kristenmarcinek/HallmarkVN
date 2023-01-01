@@ -82,7 +82,8 @@ label chapter1_charlie:
 
     scene bakery with fade
 
-    "It’s a charming little place on the corner of Main Street tastefully decorated for Christmas with a wreath on the front door and a little candle in every window. You immediately know you have the right place when you hear Charlie’s dog Bailey barking as you walk up the front steps."
+    "It’s a charming little place on the corner of Main Street tastefully decorated for Christmas with a wreath on the front door and a little candle in every window."
+    "You immediately know you have the right place when you hear Charlie’s dog Bailey barking as you walk up the front steps."
 
     "Before you can even knock the door swings open, revealing a beaming Charlie who is holding Bailey back by the collar."
 
@@ -105,7 +106,7 @@ label chapter1_charlie:
     c "Yup! Dad went out with some buddies so we’ve got the run of the place. I hope spaghetti’s okay?"
 
     mc "Spaghetti’s great!"
-    
+
     "Charlie leads you towards the dining room table where a generous helping of noodles has already been served onto your plate. In the middle of the table sits the delicious looking apple pie that he used to entice you over in the first place."
 
     mc surprise "That’s quite the pie, Charlie… You work at the bakery with your dad, right?"
@@ -151,25 +152,26 @@ label chapter1_charlie:
     mc neutral "It’s Monica’s idea. She had this big idea to make it go viral by appealing to people’s love for Christmas. Says it’ll drive tourism here and be good for town. She’s made it her personal mission to make sure Harkmall gets its first Starcups"
 
     show c surprise
-    
+
     c "That’s… awful!"
 
     mc confused "What? Why?"
 
     show c sad
 
-    c "The bakery… it’s not doing so well. I mean, I’m helping out as much as I can but I’m nowhere near as good at baking as my mom was. If a Starcups moves in across the street or something… that could put us out of business for good"
+    c "The bakery… it’s not doing so well. I mean, I’m helping out as much as I can, but I’m nowhere near as good at baking as my mom was."
+    "If a Starcups moves in across the street or something… that could put us out of business for good."
 
     menu:
         "That’s terrible! I didn’t realize. I’ll see what I can do.":
             $ noStarcups = True
             $ charlie_affection += 5
-        "“I’m sure it won’t be that bad! Don’t you think that’s a little overdramatic?"
+        "I’m sure it won’t be that bad! Don’t you think that’s a little overdramatic?":
             $ noStarcups = False
             $ charlie_affection -= 5
-    
+
     show c neutral
-    
+
     c "Don’t get me wrong, I don’t want to tell you how to do your job. Just… think about it. Maybe you can just undersell Harkmall so it stays off the radar…?"
 
     mc neutral "Well, it’s really Monica’s article so I’ll have to talk to her…"
@@ -192,7 +194,7 @@ label chapter1_charlie:
 
     mc neutral b "Charlie-! This is amazing!"
 
-    show c smile b 
+    show c smile b
 
     c "You really like it?"
 
@@ -212,7 +214,7 @@ label chapter1_charlie:
 
     mc "Uh huh… when have you ever {b}just watched{/b} a snowball fight and not gotten involved Charlie?"
 
-    show c smile b 
+    show c smile b
 
     c "“Okay, okay you got me. I’m definitely joining in. But you totally don’t have to! It’ll be a fun time either way. And besides… I’ll be bringing Bailey!"
 
@@ -240,7 +242,7 @@ label chapter1_charlie:
 
 label chapter2_charlie:
     scene markhall days
-    
+
     "You decide to look for Charlie. It isn’t too hard to spot him, after all. He stands about a foot above everyone else. He’s laughing and slowly trudging his way back towards his igloo. You run off towards him."
 
     mc neutral coat b "Charlie!"
@@ -253,7 +255,7 @@ label chapter2_charlie:
 
     mc surprise coat "Yeah, it was a great time! I was just going to ask if- whoah!"
 
-    show c surprise 
+    show c surprise
 
     "Your foot skids on a slippery patch of ice. Everything moves in slow motion for an instant as you fall towards Charlie. He reaches out his arms to catch you."
 
@@ -282,13 +284,13 @@ label chapter3_charlie:
 
     b "WOOF~!"
 
-    show c surprise with dissolve 
+    show c surprise with dissolve
 
     c "Whoah! Whoah! Bailey, down girl! Cool it!"
 
     "Your eyes slowly blink open and when you look up Charlie is walking towards you with an ice pack in his hand."
 
-    show c sad 
+    show c sad
 
     c "“Oh! [player]. You’re awake…"
 
@@ -358,14 +360,8 @@ label chapter3_charlie:
 
     mc open b "...I really appreciate it. Everything. You made this lame work trip a million times better. Honest."
 
-    show c smile b 
+    show c smile b
 
     c "Glad I could help, [player]. Get back to your hotel safe, okay? Text me if you need anything."
 
     jump chapter4
-
-
-
-
-
-    

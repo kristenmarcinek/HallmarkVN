@@ -20,9 +20,13 @@ image airport = "/bg/airport.png"
 image hotel = "/bg/hotel.png"
 image hotel outside = "/bg/hotel outside.png"
 
+image credits = "/gui/menus/plain bg.png"
+
 #---CG---
 image monica cg 1 = "/cg/monica cg 1.png"
 image charlie cg 1 = "/cg/charlie cg 1.png"
+image monica cg 2 = "/cg/monica cg 2.png"
+image charlie cg 2 = "/cg/charlie cg 2.png"
 
 #---MONICA---
 image m angry = "/monica/m angry.png"
@@ -63,6 +67,21 @@ image c surprise = "/charlie/c surprise.png"
 image c surprise b = "/charlie/c surprise b.png"
 image c wink = "/charlie/c wink.png"
 image c wink b = "/charlie/c wink b.png"
+
+#charlie apron
+
+image c angry apron = "/charlie/c angry apron.png"
+image c angry apron b = "/charlie/c angry apron b.png"
+image c neutral apron= "/charlie/c neutral apron.png"
+image c neutral apron b = "/charlie/c neutral apron b.png"
+image c sad apron = "/charlie/c sad apron.png"
+image c sad apron b = "/charlie/c sad apron b.png"
+image c smile apron = "/charlie/c smile apron.png"
+image c smile apron b = "/charlie/c smile apron b.png"
+image c surprise apron = "/charlie/c surprise apron.png"
+image c surprise apron b = "/charlie/c surprise apron b.png"
+image c wink apron = "/charlie/c wink apron.png"
+image c wink apron b = "/charlie/c wink apron b.png"
 
 # ---MC SPRITE---
 
@@ -616,7 +635,7 @@ label start:
                 jump chapter1_monica
             if rng == 2:
                 jump chapter1_charlie
-    
+
     label chapter2:
         scene hotel with fade
 
@@ -637,7 +656,7 @@ label start:
         "As eager as you were to get out of the sleepy, little town, you have to admit it’s got its perks."
 
         "After about an hour of walking, which includes stopping into a local Mom and Pop shop for a cup of coffee and a bagel, you hear some commotion beginning a block over."
-        
+
         "Just then, a little kid dragging a sled loaded up with pre-packed snowballs sprints past you."
 
         show mc surprise coat
@@ -731,7 +750,7 @@ label start:
         show c smile b
 
         c "Hey, Mon-! C’mon! Join the fun!"\
-        
+
         show m surprise coat
 
         m "You built an entire igloo for just one snowball fight…?"
@@ -751,7 +770,7 @@ label start:
         c "Anyway, you wanna toss a snowball?"
 
         m "I’ll pass."
-        
+
         c "Aww c’mon. It’ll make you feel better. Avenge your shitty coffee!"
 
         "Monica stares at the snowball in Charlie’s hand for a long moment before finally taking it with a sigh."
@@ -760,11 +779,9 @@ label start:
 
         "She turns and lobs the snowball as hard as she can, pegging a teenager right in the face!"
 
-        mc surprise coat
-
         show m surprise coat b
 
-        show c surprise 
+        show c surprise
 
         m "Oops-"
 
@@ -794,7 +811,7 @@ label start:
             jump chapter2_charlie
         else:
             jump chapter2_monica
-    
+
     label chapter4:
         $ rng = renpy.random.randint(1, 2)
         if monica_affection > charlie_affection:

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/monica.rpy", line 134: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Stay silent."
-                  ^
+File "game/credits.rpy", line 3: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        "Whahaha
 
-Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Dec 30 10:10:01 2022
+Ren'Py Version: Ren'Py 8.0.1.22070503n
+Sat Dec 31 21:41:17 2022

@@ -361,7 +361,7 @@ screen main_menu():
         hotspot (337, 914, 267, 63) action ShowMenu("load")
         hotspot (627, 912, 264, 63) action ShowMenu("preferences")
         hotspot (932, 911, 337, 64) action [ShowMenu("gallery")]
-        # hotspot (1295, 908, 326, 70) action [ShowMenu("credits")]
+        hotspot (1295, 908, 326, 70) action [Start("credits")]
         # (we don't have a credits menu yet)
         hotspot (1651, 914, 261, 66) action Quit(confirm=True)
 
