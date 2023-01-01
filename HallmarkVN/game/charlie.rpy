@@ -239,11 +239,13 @@ label chapter1_charlie:
     jump chapter2
 
 label chapter2_charlie:
+    scene markhall days
+    
     "You decide to look for Charlie. It isn’t too hard to spot him, after all. He stands about a foot above everyone else. He’s laughing and slowly trudging his way back towards his igloo. You run off towards him."
 
     mc neutral coat b "Charlie!"
 
-    show c smile b 
+    show c smile b with dissolve
 
     "He beams at you."
 
@@ -260,6 +262,8 @@ label chapter2_charlie:
     "…If he wasn’t a moment too late."
 
     "You fall face first onto a patch of ice like a klutz."
+
+    scene black with fade
 
     "BONK!"
 

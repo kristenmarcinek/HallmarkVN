@@ -225,3 +225,34 @@ label chapter1_monica_pt_2:
     m "Night, [player]"
 
     jump chapter2
+
+label chapter2_monica:
+    scene markhall days
+
+    "You decide to look for Monica. It isn’t too hard to spot her. She seems to have shaken off the despair of losing her coffee in the heat of battle. She’s in the middle of the fray, laughing maniacally."
+
+    mc smile coat b "“Monica!"
+
+    show m smile coat b with dissolve
+
+    "She grins at you."
+
+    m "[player]! You were right! This was a blast."
+
+    mc surprise coat "Yeah, it was a great time! I was just going to ask if- whoah!"
+
+    show m surprise coat
+
+    "Your foot skids on a slippery patch of ice. Everything moves in slow motion for an instant as you fall towards Charlie. He reaches out his arms to catch you."
+
+    "It would almost be romantic…"
+
+    "…If he wasn’t a moment too late."
+
+    "You fall face first onto a patch of ice like a klutz."
+
+    scene black with fade
+
+    "BONK!"
+
+    "And go out like a light."
