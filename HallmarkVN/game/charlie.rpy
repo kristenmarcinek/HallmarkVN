@@ -269,5 +269,103 @@ label chapter2_charlie:
 
     "And go out like a light."
 
+    jump chapter3_charlie
+
+label chapter3_charlie:
+    scene bakery with fade
+
+    "The first thing you notice as you come to is something warm and wet against the side of your cheek."
+
+    "Is… someone licking you?"
+
+    "Then, a deep bark snaps you out of your semi-conscious state."
+
+    b "WOOF~!"
+
+    show c surprise with dissolve 
+
+    c "Whoah! Whoah! Bailey, down girl! Cool it!"
+
+    "Your eyes slowly blink open and when you look up Charlie is walking towards you with an ice pack in his hand."
+
+    show c sad 
+
+    c "“Oh! [player]. You’re awake…"
+
+    "You try to sit up but a dull, painful {b}throb{/b} makes you wince."
+
+    "Charlie rushes to your side and gently placed the ice pack against your bruised noggin."
+
+    c "Whoah, whoah, hey, hold on there. You’ve got quite the bump there…"
+
+    mc confused "What… happened…?"
+
+    c "You, uh… slipped on some ice and kinda face planted…"
+
+    show c neutral
+
+    "You see the faintest twitch at the corner of his mouth. Is he holding back a laugh?"
+
+    mc angry b "It’s nice to see you so concerned."
+
+    show c neutral b
+
+    c "Ah, don’t be mad. It was kinda cute until you hit the ground…"
+
+    "You look into Charlie’s eyes and they twinkle with affection as he stares down at you."
+
+    mc sigh b "Easy for you to say. You’re not the one who hit your head.."
+
+    c "“I mean, if it makes you feel better, I’ve hit my head plenty of times."
+
+    mc "You know, somehow, that doesn’t make it any better…"
+
+    c "Yeah, yeah. I’m just glad you’re doing okay now. I would hate to be another reason you hate home…"
+
+    mc confused b "“I don’t… hate Harkmall, Charlie."
+
+    show c sad b
+
+    c "Nah, I know. That… was a little harsh. I just.. I gotta say… You had fun today right? I mean, before the tumble"
+
+    mc "Well, yeah, it was the most fun I’ve had in a long time."
+
+    c "Then maybe you’ll start to remember what makes this town so great, [player]. It’s not… some tourist trap with cheesy attractions…"
+
+    mc neutral b "I know that, Charlie-"
+
+    c "Hold on, just - lemme finish. Harkmall… sure it’s only got one traffic light and maybe a slight obsession with Christmas… but the traditions we’ve got… they’re what make it special."
+
+    c "We don’t need a big tourism buzz or a Starcups on every block. It’s the people here that make the town special. I… I really hope you, especially, can see that."
+
+    mc sad b "Charlie…"
+
+    c "“I mean, sure, you still live in the city. I’m not… trying to get you to move back home or anything - that’d be crazy - but I mean, maybe it wouldn’t be so bad if you came back to vi-"
+
+    mc neutral "Charlie, the ice pack is leaking."
+
+    show c surprise
+
+    "Sure enough, a steady trickle of ice water had started to trickle down the back of your neck, sending shivers down your spine. "
+
+    c "Oh! Jeez, I’m sorry, [player]. Here, lemme grab another."
+
+    mc "No that’s okay, I… I should get going anyway. I’m sure Monica will be worried. If I have a concussion I won’t be able to catch the flight back with her. I should head to the doctor just to be safe."
+
+    c "Oh- okay. Do you want me to give you a lift?"
+
+    mc "No, that’s okay, you’ve done enough already, Charlie. Thanks a million. I…"
+
+    mc open b "...I really appreciate it. Everything. You made this lame work trip a million times better. Honest."
+
+    show c smile b 
+
+    c "Glad I could help, [player]. Get back to your hotel safe, okay? Text me if you need anything."
+
+    jump chapter4
+
+
+
+
 
     

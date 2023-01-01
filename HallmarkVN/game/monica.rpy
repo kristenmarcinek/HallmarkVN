@@ -256,3 +256,126 @@ label chapter2_monica:
     "BONK!"
 
     "And go out like a light."
+
+    jump chapter3_monica
+
+label chapter3_monica:
+    scene hotel with fade
+
+    "The sound of an angry phone call stirs you from unconsciousness. "
+
+    m "Look, just get someone down here as soon as you can, okay?!"
+
+    show m angry 
+
+    "As your eyes flutter open you feel a dull pang in your forehead, followed by a cold sensation trickling down your temple."
+
+    "You reach up and feel a washcloth clumsily tied into a little pouch with some loose ice inside set upon your forehead."
+
+    mc confused b "Monica…?"
+
+    m "Oh shit - ! [proSingle] [toBe] awake. Look, please just send someone when you can, okay? I gotta go…"
+
+    "Monica ends the call abruptly and turns towards you."
+
+    show m smirk b
+
+    m "[player]! You’re awake! Are you feeling okay?"
+
+    mc sigh "My head feels like it split open but otherwise fine…"
+
+    m "Yeah, you took a rough fall there…"
+
+    show m surprise b 
+
+    "You look up and see Monica’s face suddenly filled with concern."
+
+    mc "Don’t tell me… you were {b}worried{/b} about me, Monica?"
+
+    show m angry b
+
+    m "Don’t get ahead of yourself, mc. I was just… you know, you can’t fly if you have a concussion - which means if your dumbass concussed yourself that means we’re going to be stuck here even longer!"
+
+    mc neutral b "Is that why you called the doctor…?"
+
+    m "Obviously! I’ve gotta get us out of here pronto!"
+
+    show m sigh b
+
+    m "Okay, and yes, maybe I was a little worried about you. They said they don’t even do house calls anymore, but I yelled at them until they agreed to come down here. This crappy hotel doesn’t even have any ice packs. I had to improvise."
+
+    mc "Wow… that’s… really sweet of you. Thanks, Monica."
+
+    show m sigh 
+
+    m "I know. I’m a goddamn delight."
+
+    mc "Did you at least have fun today…?"
+
+    m "Well, we’re not gonna talk about the coffee tragedy… but yeah, I guess I did have fun."
+
+    show m neutral 
+
+    m "This town isn’t as sleepy as I thought it was."
+
+    mc neutral b "See! I knew you’d like the snowball fight!"
+
+    show m smirk 
+
+    m "Look, I just needed to let off a little steam from all the travel stress, okay? It’s not like I’m about to drop everything and move out here and become a… Harkmallian… Harkmaller… Whatever you call you freaks from this dumb town-!"
+
+    mc done "I didn’t think you were, jeez…"
+
+    m "Besides, this trip has been fun the entire time, not just in Harkmall."
+
+    mc open "Yeah, I guess the other towns were pretty fun too…"
+
+    show m angry b
+
+    m "I’m talking about you, dummy-!"
+
+    mc surprise b "Me…?"
+
+    m "Yes, you!"
+
+    show m sigh 
+
+    m "Look. I don’t fucking like the holidays. At best they’re a capitalist cash grab and at their worst they’re just depressing reminders for anyone who doesn’t have anyone to spend them with."
+
+    m "...I thought I was going to be alone this year since my ex and I got divorced. That’s why I took this stupid assignment in the first place. I was hoping it would distract me. But… then you got assigned to it as well…"
+
+    mc sad "Monica…"
+
+    show m sigh b 
+
+    m "Look, don’t get all sentimental on me or anything. I’m just saying… I’ve had a lot of fun hanging out and getting to know you. You’re… you’re alright, [player]."
+
+    mc open b "You’re… you’re alright too, Monica."
+
+    show m smirk 
+
+    m "I know, right? Alright, now lie back down and I’ll fill the rag with more ice from the bin down the hall… I want that noggin shrunk by the time the doctor gets here. We gotta clear you to fly, baby!"
+
+    "Monica grabs the ice pack off your head, turns on her heel, and marches out the door."
+
+    jump chapter4
+
+label monica_ending:
+    scene hotel outside with fade 
+
+    "Luckily, that evening, Doctor Klaus from the county hospital, St. Nicholas’s, came by and cleared you for flying."
+
+    "It was a miracle you weren’t concussed, but little miracles like that happen all the time in Harkmall, Massachusetts."
+
+    "The next morning, Charlie is kind enough to drive you and Monica to the airport. "
+
+    show c smile
+
+    c "Mornin’ folks!"
+
+    mc neutral coat "Hey Charlie, thanks so much for picking us up."
+
+    c "My pleasure! Where’s Monica…?"
+
+    ""
+

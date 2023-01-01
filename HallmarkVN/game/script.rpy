@@ -794,6 +794,18 @@ label start:
             jump chapter2_charlie
         else:
             jump chapter2_monica
+    
+    label chapter4:
+        $ rng = renpy.random.randint(1, 2)
+        if monica_affection > charlie_affection:
+            jump monica_ending
+        elif charlie_affection > monica_affection:
+            jump charlie_ending
+        else:
+            if rng == 1:
+                jump monica_ending
+            if rng == 2:
+                jump charlie_ending
 
 
     # This ends the game.
