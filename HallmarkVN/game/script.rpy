@@ -7,6 +7,7 @@ define mc = Character("[player]", color="#dead71", image="mc")
 define c = Character("Charlie", color="#b55151")
 define m = Character("Monica", color="#5ba84c")
 define b = Character("Bailey")
+define k = Character("Kid")
 
 define n_nvl = Character("Nighten", kind=nvl, image="nighten", callback=Phone_SendSound)
 define e_nvl = Character("Eileen", kind=nvl, callback=Phone_ReceiveSound)
@@ -615,6 +616,184 @@ label start:
                 jump chapter1_monica
             if rng == 2:
                 jump chapter1_charlie
+    
+    label chapter2:
+        scene hotel with fade
+
+        "The next morning."
+
+        "Monica’s snoring rouses you. The woman seems to be as loud and brash asleep as she is awake."
+
+        "You consider waking her up, but given the fact that you’re dragging her into a massive snowball fight in a town that’s a little too obsessed with Christmas, you decide to let her enjoy her peace for a little while longer."
+
+        "Instead, you decide to hop up, get dressed, and stroll around town for a bit."
+
+        scene markhall day with fade
+
+        show mc neutral coat
+
+        "It’s a nice walk. Quiet. You can’t remember the last time you experienced a morning this quiet. It’s nothing like the city."
+
+        "As eager as you were to get out of the sleepy, little town, you have to admit it’s got its perks."
+
+        "After about an hour of walking, which includes stopping into a local Mom and Pop shop for a cup of coffee and a bagel, you hear some commotion beginning a block over."
+        
+        "Just then, a little kid dragging a sled loaded up with pre-packed snowballs sprints past you."
+
+        show mc surprise coat
+
+        k "CHAAAAAARGE!"
+
+        "Sounds like the Snowball Extravaganza is popping off."
+
+        show mc neutral coat
+
+        "When you arrive at the park a small crowd has already begun to gather. An assortment of people have turned up - from eager, excitable kids, to rowdy teenagers, and even small families."
+
+        "The park has been turned into a veritable battle field of epic, snowy proportions."
+
+        "It looks like some of the more overeager contenders have arrived early to set up fortifications - some have built small walls to duck behind, or trenches to get in."
+
+        "It looks like someone even built a makeshift igloo in one corner - whoever it was must have gotten here at like 6:00 AM-!"
+
+        scene markhall day
+
+        c "Yo, [player], you made it!!"
+
+        show c smile b
+
+        "Suddenly, Charlie popped out of the hole in the top of the igloo, beaming brightly at you with a snowball in each hand."
+
+        mc surprise coat b "Charlie?!"
+
+        c "Look alive, [player]! Fire in the hole!"
+
+        "Charlie suddenly lobbed one of the snowballs high into the air, clearly not caring where it may land."
+
+        mc "Charlie, you- you built an {b}igloo{/b}?"
+
+        show c wink b
+
+        c "Well, yeah! Why not?"
+
+        mc "This must have taken hours!"
+
+        c "Ehhh a couple. But I had to wake up to take the early shift at the bakery anyway. Gotta get the buns in the oven at, like, 4:00 AM if we want them all ready in time for opening. I just skedaddled after they were done!"
+
+        "Charlie chucks another snowball mid sentence that narrowly misses a middle-aged man running by."
+
+        mc open coat b "This is insane! I don’t remember it being this popular when we were kids"
+
+        show c smile
+
+        c "“Well, yeah, that’s how holiday traditions work, right? You start one and then you teach your friends or kids, and then soon enough everyone’s doing it!"
+
+        mc "I guess so."
+
+        c "Hey- Where’s your friend?"
+
+        "As if on cue you hear a scream from the edge of the park."
+
+        m "MY COFFEE!!!"
+
+        show m angry coat
+
+        show c surprise
+
+        mc surprise coat "Uh oh-"
+
+        "You look over and see Monica scrambling in the snow, fumbling to retrieve a paper coffee cup whose contents have splattered all over the ground, turning a patch of snow dark brown and melting it quickly."
+
+        "It looks like a stray snowball caught Monica in the arm and sent the cup flying."
+
+        m "WHO THREW THAT?!"
+
+        "You book it over to Monica, who has failed to salvage her cup of coffee… and looks to be seething hotter than the now-steaming patch of snow."
+
+        mc neutral coat "Heyyyyy Monica… You made it!"
+
+        "Monica looks up from the remnants of her ruined cup of coffee, clearly in distress."
+
+        show m sigh coat b
+
+        m "[player]! My coffee! It took half an hour for the hotel’s shitty coffee maker to brew a single cup! It’s not even a french press or anything. It’s just {b}drip{/b}! I {b}hate{/b} this place!"
+
+        mc "Aww, Monica… I think it’s a little harsh to judge a whole town just for one shitty coffee maker, don’t you…?. Why don’t we get you out of the way. Last thing you need right now is a snowball to the face. C’mon. Charlie built an igloo…"
+
+        m "You know I’m no good without my coffee, mc… I’d better just sit and watch."
+
+        mc "Oh, come on. Just throw one snowball. It’ll make you feel better."
+
+        m "I don’t know about that…"
+
+        "You help Monica up and guide her back towards the igloo where Charlie is chucking snowballs with abandon."
+
+        show c smile b
+
+        c "Hey, Mon-! C’mon! Join the fun!"\
+        
+        show m surprise coat
+
+        m "You built an entire igloo for just one snowball fight…?"
+
+        c "Sure! Why not? There’s plenty of snow to go around!"
+
+        m "It’s not the snow I was worried about. It just seems a tad… excessive."
+
+        show m angry coat
+
+        "You see Monica’s eyebrow twitch in anger but Charlie continues before she can go off on him."
+
+        c "Sorry about that. Stop by the bakery next time, I always keep a fresh pot going!"
+
+        m "Yeah, I’ll be sure to do that…"
+
+        c "Anyway, you wanna toss a snowball?"
+
+        m "I’ll pass."
+        
+        c "Aww c’mon. It’ll make you feel better. Avenge your shitty coffee!"
+
+        "Monica stares at the snowball in Charlie’s hand for a long moment before finally taking it with a sigh."
+
+        m "Fine."
+
+        "She turns and lobs the snowball as hard as she can, pegging a teenager right in the face!"
+
+        mc surprise coat
+
+        show m surprise coat b
+
+        show c surprise 
+
+        m "Oops-"
+
+        "But before she can apologize, the teenager lets out a battle cry and he and his friends start lobbing a volley of snowballs at you!"
+
+        c "FIGHT FOR YOUR LIVES!"
+
+        "Suddenly, you, Monica, and Charlie are thrust into the snow-slinging free for all."
+
+        scene markhall day
+
+        "The Snowball Extravaganza rages on as more and more people show up. Before you know it, you’ve passed half an hour of snow-slinging fun with your friends."
+
+        "As more people show up, the park starts to get crowded. Eventually, you become separated from Monica and Charlie."
+
+        "As the fun starts to wind down you decide it’s time to find your friends."
+
+        menu:
+            "Look for Charlie":
+                $ findCharlie = True
+                $ charlie_affection += 5
+            "Look for Monica":
+                $ findCharlie = False
+                $ monica_affection += 5
+
+        if findCharlie:
+            jump chapter2_charlie
+        else:
+            jump chapter2_monica
 
 
     # This ends the game.

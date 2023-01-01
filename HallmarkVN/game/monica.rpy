@@ -223,3 +223,5 @@ label chapter1_monica_pt_2:
     mc neutral "Night, Monica…"
 
     m "Night, [player]"
+
+    jump chapter2

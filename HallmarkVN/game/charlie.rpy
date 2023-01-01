@@ -230,6 +230,40 @@ label chapter1_charlie:
 
     c "Thanks again for coming, [player]. I had a really great time catching up!"
 
-    mc neutral 
+    mc neutral "Thank you again for having me! The food was excellent, and I enjoyed catching up too. And of course seeing you again, Bailey!"
+
+    b "WOOF!"
+
+    mc "Thanks, Bailey. I’ll see you both tomorrow at the park!"
+
+    jump chapter2
+
+label chapter2_charlie:
+    "You decide to look for Charlie. It isn’t too hard to spot him, after all. He stands about a foot above everyone else. He’s laughing and slowly trudging his way back towards his igloo. You run off towards him."
+
+    mc neutral coat b "Charlie!"
+
+    show c smile b 
+
+    "He beams at you."
+
+    c "Hey, [player]! Having fun?"
+
+    mc surprise coat "Yeah, it was a great time! I was just going to ask if- whoah!"
+
+    show c surprise 
+
+    "Your foot skids on a slippery patch of ice. Everything moves in slow motion for an instant as you fall towards Charlie. He reaches out his arms to catch you."
+
+    "It would almost be romantic…"
+
+    "…If he wasn’t a moment too late."
+
+    "You fall face first onto a patch of ice like a klutz."
+
+    "BONK!"
+
+    "And go out like a light."
+
 
     
