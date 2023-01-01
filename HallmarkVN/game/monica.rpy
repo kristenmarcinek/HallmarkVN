@@ -377,5 +377,119 @@ label monica_ending:
 
     c "My pleasure! Where’s Monica…?"
 
-    ""
+    mc "She’s just paying the bill, she should be out in a second."
+
+    "You and Charlie load the bags up into the bed of his truck and a couple minutes later Monica walks out."
+
+    show m angry coat
+
+    m "You’d think at the rates we pay the least they could do is give us a decent fucking cup of coffee in the morning…"
+
+    c "Oh, right, that reminds me-!"
+
+    "Charlie opens the passenger’s side door and leans down to pick something up off the floor. When he turns around, he’s holding a drink tray with two piping hot cups of coffee."
+
+    c "I brought ‘em over from the bakery!"
+
+    show m surprise coat b
+
+    m "For… us?"
+
+    c "Of course! Dark blend and everything!"
+
+    show m sigh b 
+
+    m "Charlie. I owe you my life.."
+
+    c "Aw don’t mention it."
+
+    mc "Alright, are we ready to head out?"
+
+    m "I think so!"
+
+    c "Let’s roll. Though, someone’s going to need to sit in the back with Bailey…"
+
+    b "WOOF~!"
+
+    mc done coat "I got it…"
+
+    show m smirk coat
+
+    m "That’s okay, mc. You got shotgun last time. I’ll take a turn in the back."
+
+    mc surprise coat b "Wait, really?"
+
+    show m sigh coat
+
+    "Anything is possible with a good dark roast."
+
+    "The three of you load up into Charlie’s truck and begin the hour long trek out to the airport. The trip out there flies by much quicker than the one into town, and soon you’re pulling up to the Departure terminal after what feels like much too quick of a drive. "
+
+    scene airport with fade
+
+    show c smile at left
+
+    show m neutral coat at right
+
+    c "Welp! Here you go, folks! Safely delivered and ready to ship back to the big city."
+
+    mc neutral coat "Thanks again, Charlie. I really appreciate it."
+
+    m "Charlie, it has been a pleasure. Thanks for everything. Especially the coffee."
+
+    c "Of course! Have a safe flight back, you two. And good luck with your article! If you’re ever back in town, don’t hesitate to call me up, okay?"
+
+    mc "Will do!"
+
+    c "Say bye, Bailey!"
+
+    b "WOOF~!"
+
+    "You and Monica make sure to give Bailey the requisite number of head pats before grabbing your bags out of the bed of the truck. With everything you need, Charlie gives you a thumbs up and pulls away."
+
+    hide c smile at left
+
+    mc "Alright, let’s head home, yeah?"
+
+    show m surprise coat b
+
+    m "Hang on a minute, [player]"
+
+    mc open coat b "What's up?"
+
+    show m sigh coat b
+
+    m "I meant what I said yesterday. About how much fun I’ve had hanging out with you. Would you… I mean, do you want to keep hanging out when we’re back in the city…"
+
+    mc surprise coat b "Hanging out…?"
+
+    show m neutral coat b
+
+    m "Yeah… Like… Not just coworkers."
+
+    mc "Like… friends or…?"
+
+    show m smirk coat b 
+
+    m "Maybe like more than friends, if you wanted? I’d… I’d like to take you out on a real date. You know. We’ll go somewhere nice. Get some good noodles. Keep talking, is all."
+
+    mc neutral b "...Yeah. Yeah, I’d like that a lot."
+
+    m "Great! It’s a date"
+
+    "Together, you and Monica head inside and catch your flight home."
+
+    "The trip is a success and the article that came of it is a viral hit, just as promised. It doesn’t lead to quite the booming tourism economy for Harkmall that Monica envisioned… but it does bring the town its first Starcups. "
+
+    "Your bosses at BuzzRead give you and Monica both big time bonuses. The first thing Monica does is take you out for a nice dinner at a world-class noodle joint."
+
+    scene monica cg 2
+
+    "The next year, the two of you spend Christmas together again. This time on a sunny beach in Puerto Rico, far, far away from snow."
+
+    return
+
+
+
+
 

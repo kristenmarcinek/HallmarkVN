@@ -365,3 +365,156 @@ label chapter3_charlie:
     c "Glad I could help, [player]. Get back to your hotel safe, okay? Text me if you need anything."
 
     jump chapter4
+
+label charlie_ending:
+    "Luckily, that evening, Doctor Klaus from the county hospital, St. Nicholas’s, came by your hotel room and cleared you for flying."
+
+    "It was a miracle you weren’t concussed, but little miracles like that happen all the time in Harkmall, Massachusetts. "
+
+    scene hotel with fade
+    
+    "The next morning, you call the SuperLyft while Monica heads to the reception desk to pay."
+
+    "You load your bags and Monica’s up into the trunk of the car, and then you sit making small talk with the driver while you wait."
+
+    "Finally, Monica comes through the front doors of the hotel, looking particularly grumpy, even for her pre-coffee standards."
+
+    show m angry coat
+
+    m "You’d think for how much they charged us for the room they could afford to give us a decent cup of coffee in the morning."
+
+    mc done coat "Is that what took you so long? You were waiting for them to brew coffee?"
+
+    m "Of course not. I’ve learned my lesson. I’m not drinking drip coffee. I was showing them where I ordered my french press from."
+
+    mc "Right… Well, our bags are loaded so we’re all ready to go."
+
+    show m smirk coat
+
+    m "Great. Let’s get out of this place."
+
+    "You and Monica pile into the SuperLyft’s backseat and take off towards the airport. You can’t help but glance over your shoulder and watch as your hometown disappears behind the snow capped hills."
+
+    "As eager as you were to move away… the return visit has been surprisingly nice. "
+
+    "You and Monica make awkward small talk with the SuperLyft driver for most of the trip. About half an hour into the drive you get a text from Charlie."
+
+    c "Did you leave already???"
+
+    "You text back."
+
+    mc "Monica wanted to leave early so we could hit the airport Starcups."
+
+    "No response."
+
+    "You wait."
+
+    "No response."
+
+    "Guess he was too upset to say goodbye. "
+
+    scene airport
+
+    "Eventually your driver pulls up to the Departure terminal. You thank him, leave a tip via the app, and climb out, grabbing your bags from the trunk before he pulls away. "
+
+    mc "Alright, let’s get goin-"
+
+    "Monica cuts you off before you can even begin to speak."
+
+    show monica neutral coat
+
+    m "Oh, thank god, there’s the Starcups. Let’s go."
+
+    "You both head inside. As you sit in the terminal eating mediocre, chain-store breakfast pastries you can’t help but think about Charlie and the bakery. "
+
+    c "[player]!"
+
+    "You swear you can almost hear him calling out to you, urging you to go back."
+
+    c "[player]!!"
+
+    "But, of course, that would be crazy. You have a job and a life in the city. You can’t just uproot your life for some guy-!"
+
+    show m surprise coat
+
+    m "[player]! It's Charlie!"
+
+    show c sad b
+
+    mc surprised coat b "Charlie?!"
+
+    "The big redheaded man is breathing heavily as he sprints up to you."
+
+    c "[player]! *huff* Don’t- *huff* don’t get on the plane yet…"
+
+    mc "Charlie..."
+
+    c "I like you - a lot. I-I know it’s only been a couple days since you came back into town but… I just… I couldn’t let you go without telling you how I feel"
+
+    mc "...Charlie, I’m not leaving yet. Our plane doesn’t leave for another three hours."
+
+    show m smirk coat
+
+    "Monica stifles a snicker."
+
+    show c surprise b
+
+    c "...Oh."
+
+    mc confused coat b "Monica, will you give us a second…?"
+
+    m "Sure. I’m gonna get a refill…"
+
+    show c neutral b
+
+    mc "Charlie… I’m flattered, honestly. I’ve had a great time visiting and it was wonderful to catch up but… Charlie, I have a life in New York! I have a wonderful job, great friends, a sweet apartment… I… I’m sorry but I can’t just abandon it all and move back to Harkmall after a two day trip…"
+
+    show c surprise b 
+
+    c "W-what?! No-! Nonono, [player], you’ve got it all wrong. Holy crap-! I’d never ask you to do something like that, are you kidding me?! What kind of crazy person would give up their job at BuzzRead to move back to their hometown?"
+
+    mc surprise coat b "Wait- what? Then… what’s with the whole… romantic airport confession?!"
+
+    c "Oh! Don’t get me wrong, [player], I really, really like you. But - I could never ask you to give all that up for me. I was just… gonna ask if you’d be okay if I came and visited you in New York sometime?"
+
+    mc "..."
+
+    c "..."
+
+    mc "OH-!"
+
+    show c smile b
+
+    c "Y-yeah!"
+
+    mc neutral b "S-Sure! Oh my god, yeah! Of course you can come visit! I’d love that!"
+
+    c "Yeah? Great! Well, then, it’s… it’s a date! I’ll text you and we can figure out a weekend for me to fly down there, yeah? Or, I mean, I can always roadtrip it and bring Bailey along!"
+
+    mc "You’ve definitely got to bring Bailey."
+
+    c "Yeah, she’d be so mad if I visited you without her… I think she really likes you."
+
+    mc "Aw, well… I really like her… and I really like you too, Charlie."
+
+    c "Well then. It’s a date!"
+
+    scene charlie cg 2
+
+    "You and Charlie spend an hour or so chatting, making plans for Charlie’s eventual visit, and finally saying your goodbyes before you and Monica catch your flight home."
+
+    "When you eventually do publish the article, you decide to gloss over some of the more charming, rustic details about Harkmall. "
+
+    "Monica’s review is also scathing, claiming Harkmall has the “worst coffee this side of the North Pole”. "
+
+    "In the end, Harkmall is safe from an onslaught of tourists."
+
+    "A couple weeks later, Charlie flies down to spend the weekend with you and it’s just as magical as your trip to Harkmall."
+
+    "During that trip, you ask Charlie if he wants to continue in a long distance relationship. He agrees wholeheartedly. You two make it work for six months, but eventually you decide to move to Harkmall to be closer to the man that you love."
+
+    "Fortunately, you’re a journalist for one of the world’s largest online news platforms and remote work is a thing, so you don’t even have to quit your job! It’s a win win."
+
+    "You move in with Charlie and Bailey and spend the next Christmas in Harkmall, living happily ever after."
+
+    return

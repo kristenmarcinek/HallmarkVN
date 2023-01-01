@@ -19,6 +19,8 @@ image bakery = "/bg/bakery.png"
 image airport = "/bg/airport.png"
 image hotel = "/bg/hotel.png"
 image hotel outside = "/bg/hotel outside.png"
+image charlie cg 2 = /cg/charlie cg 2.png
+image monica cg 2 = /cg/monica cg 2.png
 
 image credits = "/gui/menus/plain bg.png"
 
